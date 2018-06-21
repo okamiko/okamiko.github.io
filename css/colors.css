@@ -1,0 +1,22 @@
+:root {
+	--highlight: #C62128;
+	--darklight: #A00000;
+	--off-white: #EEE;
+	--light-gray: #AAA;
+	--background-gray: #333;
+	--header-gray: #222;
+	--material: #00978A;
+
+	/* Arc-Darker */
+	--seesan: #303642;
+	--dim-shadow: #414A59;
+	--arc-blue: #5294E2;
+	--strawberry: #CC575D;
+	--silver-wings: #F5F6F7;
+
+	/* Overwatch */
+	--tracer: #F99E1A;
+	--shade: #43484C;
+	--light-shade: #405275;
+	--ult: #218FFE;
+}

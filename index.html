@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jeffrey Hui</title>
+	<link href="static/img/favicon16.png"/>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- take physical width of device screen --><!-- 1.0 does not zoom, when visiting page -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+	<div>
+		<button onclick="toTop()" id="to-top">Go Top</button>
+	</div>
+
+	<div id="navbar">
+		<a class="nav-links" href="#game-projects" onclick="closeMenu()">PROJECTS</a>
+		<a class="nav-links" href="#engineering-projects" onclick="closeMenu()">ENGINEERING</a>
+		<h2 class="header-name">JEFFREY<span class="middle">C</span><span class="last">HUI</span></h2>
+		<a class="nav-links" href="#resume" onclick="closeMenu()">RESUMES</a>
+		<a class="nav-links" href="#about-contact" onclick="closeMenu()">ABOUT/CONTACT</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="nav-links icon" onclick="toggleMenu()">&#9776;</a>
+	</div>
+	<div id="banner" onclick="closeMenu()">
+		<h1 id="intro" class="intro">
+			Designer & Front End Developer
+		</h1>
+		<p class="pitch">
+			Hi, I'm <span class="last">Jeffrey</span>. I design & build user interfaces. I am currently seeking an internship as a <span class="last">Front End Developer</span>.
+			You can find both my game projects and engineering projects below.
+		</p>
+	</div>
+
+	<div onclick="closeMenu()"> <!-- Click anywhere = close hamburger -->
+		<div id="game-projects" class="anchor"></div>
+		<div id="game-projects-actual" class="section-title">
+			<h2>PROJECTS</h2>
+		</div>
+		<div class="section section-grid">
+			<!-- Shroommates -->
+			<div id="shroommates" class="card overlay" onclick="openModal(this)">
+				<img class="card-image" src="static/img/0_shroommates/bathroom.png" />
+				<div class="card-container">
+					<h4 class="project-title">Shroommates</h4>
+					<p class="project-note">&mdash; Unreal Engine</p>
+					<p><i>"Housing ain't cheap here, mate."</i></p>
+				</div>
+			</div>
+			<div id="shroommates-modal" class="modal">
+				<div class="modal-content">
+					<span id="shroommates-close" class="close">&times;</span>
+					<div class="project-header">
+						<h2 class="project-title">Shroommates |</h2>
+						<h3 class="project-note">Made with Unreal Engine 4.17.2 (User Test Coordinator, Generalist Programmer)</h3>
+						<p><i>"Housing ain't cheap here, mate."</i></p>
+					</div>
+					<div class="project-indent">
+						<p>
+							Save your mushroom family from the humans in Shroommates, a light-hearted 3D platforming adventure! Solve puzzles through clever use of your environment and get everyone back home safely. You're a little shroom in a big world - squish down for a powerful jump, parachute away with your mushroom cap, and climb vines to get to vantage points around the house. Beware of the human chef bent on putting delicious shrooms on his pizza, and a deadly Shroomba that attacks fungi on sight! <a class="small-link" href="http://playshroommates.com" target="_blank"><i>Shroommates</a></i> is full of funny interactions to discover, catchy music, and a fully voiced cast of colorful characters to meet! Click <a class="small-link" href="https://www.youtube.com/watch?v=5kakWsqaqzs" target="_blank"><i>this</a></i> to watch the game trailer.
+						</p>
+						<ul>
+							<li>Leading and delegating tasks to six other programmers alongside producers.</li>
+							<li>Implementing game behaviors as needed in various areas, such as:
+								<ul>
+									<li>State management: programming win and lose conditions.</li>
+									<li>Game objects: programming key/door interaction and various trigger box interactions.</li>
+									<li>Camera and controller support.</li>
+									<li>Environmental Artist & Map Design.</li>
+								</ul>
+							</li>
+							<li>Idenified, troubleshooted, and later explained to some team members Git issues and their solutions.</li>
+						</ul>
+						<h2>Screenshots</h2>
+					</div>
+					<div class="gallery">
+						<img class="modal-image" src="static/img/0_shroommates/living_room.png" width=33% height=33%>
+						<img class="modal-image" src="static/img/0_shroommates/bedroom.png" width=33% height=33%>
+						<img class="modal-image" src="static/img/0_shroommates/garden.png" width=33% height=33%>
+					</div>
+					<div style="text-align: center">
+						<span id="shroommates-close-btn" class="close-btn">Close</span>
+					</div>
+				</div>
+			</div>
+			<!-- Battlegrounds -->
+			<div id="battlegrounds" class="card" onclick="openModal(this)">
+				<img class="card-image" src="static/img/1_battlegrounds/br_map.png" />
+				<div class="card-container">
+					<h4 class="project-title">Battlegrounds</h4>
+					<p class="project-note">&mdash; the Board Game</p>
+					<p><i>"When you build a massive base and it's outside the circle."</i></p>
+				</div>
+			</div>
+			<div id="battlegrounds-modal" class="modal">
+				<div class="modal-content">
+					<span id="battlegrounds-close" class="close">&times;</span>
+					<div class="project-header">
+						<h2 class="project-title">Battlegrounds |</h2>
+						<h3 class="project-note">the Board Game (Systems Designer)</h3>
+						<p><i>"When you build a massive base and it's outside the circle."</i></p>
+					</div>
+					<div class="project-indent">
+						<p>
+							A board game based off of the recent popular trend of battle royale games and a systems design exercise.
+							You've seen the thousands of PUBG and Fortnite knock-offs for PC and smartphones, now check out the board game!
+							Manage a team of three units as you try to win that chicken dinner!
+							Each unit has up to ten actions points to use to move around the map, open chests for loot, and shoot other players.
+							Last team standing wins!
+							View the presentation <a class="small-link" href="static/img/1_battlegrounds/battlegrounds_presentation.pdf" type="application/pdf" target="_blank">here</a>.
+						</p>
+						<ul>
+							<li>Collaborated on game mechanics and balance.</li>
+							<li>Balanced reaction point system, which helps units getting shot at by granting them immediately spendable action points to prevent immediate death.</li>
+							<li>Balanced damage, range, accuracy (determined with die roll), and usage cost for 4 different weapons.</li>
+							<li>
+								Created interactive game core loop using <a class="small-link" href="http://www.jorisdormans.nl/machinations/" target="_blank">Machinations</a>. Download the XML <a class="small-link" href="static/img/1_battlegrounds/battle-royale.xml" download="battle-royale.xml">here</a>,
+								and open it within Machinations.
+							</li>
+							<li>Transferred ideas, rules, and mechanics to visually clean documents for presentation.</li>
+						</ul>
+						<h2>Screenshots</h2>
+					</div>
+					<div class="gallery">
+						<img class="modal-image" src="static/img/1_battlegrounds/br_map.png" width=33% height=270px>
+						<img class="modal-image" src="static/img/1_battlegrounds/br_machinations.png" width=33% height=270px>
+						<img class="modal-image" src="static/img/1_battlegrounds/br_cards.png" width=33% height=270px>
+					</div>
+					<div style="text-align: center">
+						<span id="battlegrounds-close-btn" class="close-btn">Close</span>
+					</div>
+				</div>
+			</div>
+			<!-- World Power -->
+			<div id="world-power" class="card" onclick="openModal(this)">
+				<img class="card-image" src="static/img/2_worldpower/wp_board.png"/>
+				<div class="card-container">
+					<h4 class="project-title">World Power</h4>
+					<p class="project-note">&mdash; the Board Game</p>
+					<p><i>"Wait, this board game is starting to look a little too realistic."</i></p>
+				</div>
+			</div>
+			<div id="world-power-modal" class="modal">
+				<div class="modal-content">
+					<span id="world-power-close" class="close">&times;</span>
+					<div class="project-header">
+						<h2 class="project-title">World Power |</h2>
+						<h3 class="project-note">the Board Game (Systems Designer)</h3>
+						<p><i>"Wait, this board game is starting to look a little too realistic."</i></p>
+					</div>
+					<div class="project-indent">
+						<p>
+							A tabletop game with a satirical look at international politics meant to represent our view of the utter insanity, childish incomprehensiblilty, and extensive cheating in the world. It is a four-player game where each player takes on the role of a country's leader and become the world's superpower through use of war, famine, disease, and politicians. Cheating is explicitly allowed and encouraged.
+						</p>
+						<ul>
+							<li>Collaborated on game design and balance.</li>
+						</ul>
+						<h2>Screenshots</h2>
+					</div>
+					<div class="gallery">
+						<img class="modal-image" src="static/img/2_worldpower/wp_board.png" width=33% height=270px>
+					</div>
+					<div style="text-align: center">
+						<span id="world-power-close-btn" class="close-btn">Close</span>
+					</div>
+				</div>
+			</div>
+			<!-- Flint -->
+				<div id="flint" class="card" onclick="openModal(this)">
+				<img class="card-image" src="static/img/3_flint/fl_game.png"/>
+				<div class="card-container">
+					<h4 class="project-title">Flint</h4>
+					<p class="project-note">&mdash; Made with Phaser.js</p>
+					<p><i>"I'm the type of person who tries to save the world."</i></p>
+				</div>
+			</div>
+			<div id="flint-modal" class="modal">
+				<div class="modal-content">
+					<span id="flint-close" class="close">&times;</span>
+					<div class="project-header">
+						<h2 class="project-title">Flint |</h2>
+						<h3 class="project-note">Generalist Programmer</h3>
+						<p><i>"I'm the type of person who tries to save the world."</i></p>
+					</div>
+					<div class="project-indent">
+						<p>
+							Flint is a top-down puzzle game where the player has to traverse through an underground water supply, fixing pipes and cleaning up waste before all the clean water is lost. The game’s mechanics focuses primarily on fixing pipes, being able to move through free space, getting to the end of the stage, and the concept of time pressure. Last level is unbeatable because the Flint Michigan water crisis is not as easy to fix.
+						</p>
+						<ul>
+							<li>Collaborated on game design and balance.</li>
+							<li>Level Designer.</li>
+							<li>Implementing game behaviors as needed in various areas, such as state management and sound design.</li>
+						</ul>
+						<h2>Screenshots</h2>
+					</div>
+					<div class="gallery">
+						<img class="modal-image" src="static/img/3_flint/fl_start.png" width=33% height=270px>
+						<img class="modal-image" src="static/img/3_flint/fl_story.png" width=33% height=270px>
+					</div>
+					<div style="text-align: center">
+						<span id="flint-close-btn" class="close-btn">Close</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Engineering -->
+	    <div id="engineering-projects" class="anchor"></div>
+				<div id="engineering-projects-actual" class="section-title">
+				<h2>ENGINEERING</h2>
+		</div>
+		<div class="section section-grid">
+			<div id="subscriptionsplitter" class="card overlay" onclick="openModal(this)">
+				<img class="card-image" src="static/img/4_subscription_splitter/subscription_splitter.png" />
+				<div class="card-container">
+					<h4 class="project-title">Subscription Splitter</h4>
+					<p class="project-note">&mdash; Used MongoDB Express.js Node.js</p>
+					<p><i>"College got me making illegal applications"</i></p>
+				</div>
+			</div>
+			<div id="subscriptionsplitter-modal" class="modal">
+				<div class="modal-content">
+					<span id="subscriptionsplitter-close" class="close">&times;</span>
+					<div class="project-header">
+						<h2 class="project-title">Subscription Splitter |</h2>
+						<h3 class="project-note">Used MongoDB Express.js Node.js</h3>
+						<p><i>"College got me making illegal applications"</i></p>
+					</div>
+					<div class="project-indent">
+						<p>
+							Subscription Splitter is a web application that aims to serve as a platform so anyone can find people to split the cost of a variety of services such as Netflix, Hulu, Chegg. Users must create an acccount before they are able to make a post. The app allows users to leave comments to let people contact each other. Database is hosted using mlab.
+							Check out the website <a class="small-link" href="https://calm-badlands-13726.herokuapp.com" target="_blank">here</a>. 							
+						</p>
+						Solo Project
+						<h2>Screenshots</h2>
+					</div>
+					<div class="gallery">
+						<img class="modal-image" src="static/img/4_subscription_splitter/subscription_splitter.png" width=33% height=33%>
+					</div>
+					<div style="text-align: center">
+						<span id="subscriptionsplitter-close-btn" class="close-btn">Close</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="resume" class="anchor" ></div>
+		<div id="resume-actual" class="section-title">
+			<h2>RESUMES</h2>
+		</div>
+		<div class="section section-grid">
+			<a class="link-card" href="static/img/resume/hui-jeffrey_resume_g.pdf" type="application/pdf" target="_blank">
+				<div id="game-resume" class="card">
+					<img class="card-image" src="static/img/maple_1.png" />
+					<div class="card-container">
+						<h4 class="project-title">Games</h4>
+						<p class="project-note">&mdash; For game recruiters</p>
+						<p><i>"Most games are just colliders colliding with other colliders right?"</i></p>
+					</div>
+				</div>
+			</a>
+			<a class="link-card" href="static/img/resume/hui-jeffrey_resume_c.pdf" type="application/pdf" target="_blank">
+				<div id="work-resume" class="card">
+					<img class="card-image" src="static/img/maple_2.png" />
+					<div class="card-container">
+						<h4 class="project-title">Engineering</h4>
+						<p class="project-note">&mdash; For engineering recruiters</p>
+						<p><i>"Literally for loops"</i></p>
+					</div>
+				</div>
+			</a>
+			<div id="hidden"></div>
+		</div>
+		<div id="about-contact" class="anchor"></div>
+		<div id="about-contact-actual" class="section-title">
+			<h2>ABOUT/CONTACT</h2>
+		</div>
+		<div class="section">
+			<div style="text-align:center">
+				<img src="static/img/me.jpg" id="me">
+			</div>
+			<p>
+				Hello!
+			</p>
+			<p>
+				I'm a Computer Science: Computer Game Design student at the University of California, Santa Cruz.
+				I've taken various game design courses, ranging from making music for games in PureData, to studying procedural content generation, to making games with a studio of talented interdisciplinary students.
+				I'm proficient at using JavaScript for web development, and have experience developing a full stack web application using MongoDB, Express.js, and Node.js. 
+				Additionally, I've dabbled in a decent amount of C++, Python, and Java.
+				I also like to think I have a decent eye for design.
+				I'm currently creeping into the proficient/experienced phase for game engines such as Unreal Engine 4.
+			</p>
+			<p>
+				I'm aiming to land a job as a front end developer, designer, or quality assurance analyst/tester, but a software engineering job would be great as well.
+				I led my team for my Subscription Splitter project, and am currently the User Test Coordinator of Shroommates&mdash;my senior game design studio project&mdash;so I have plenty of experience in teams, leadership, and communication. 
+			</p>
+			<p>
+				Some online multiplayer games I'm hooked on are 
+				<a class="small-link" href="http://maplestory.nexon.net" target="_blank">MapleStory</a>,
+				<a class="small-link" href="https://playoverwatch.com/en-us/" target="_blank">Overwatch</a>,
+				<a class="small-link" href="https://na.leagueoflegends.com/en/" target="_blank"> League of Legends</a>, and
+				<a class="small-link" href="https://mariokart8.nintendo.com" target="_blank"> Mario Kart 8</a>.
+				I also highly enjoy single player games, most notably
+				<a class="small-link" href="http://www.tetrisfriends.com" target="_blank">Tetris Marathon</a> and
+				<a class="small-link" href="http://www.dynastywarriors8.eu/xl/uk/#home" target="_blank">Dynasty Warriors 8 Xtreme Legends</a>.
+				Of course, I also play plenty of couch multiplayer games too, like
+				<a class="small-link" href="http://www.ghosttowngames.com/overcooked/" target="_blank">Overcooked!</a>,
+				<a class="small-link" href="https://www.cleverendeavourgames.com/ultimate-chicken-horse/" target="_blank">Ultimate Chicken Horse</a>,
+				<a class="small-link" href="https://www.ssbwiki.com/Super_Smash_Bros._Melee" target="_blank">Super Smash Bros. Melee</a>, and
+				<a class="small-link" href="https://www.ssbwiki.com/Project_M" target="_blank">Project M</a>.
+				Lastly, I also enjoy co-op games a lot, most notably <a class="small-link" href="http://www.brothersthegame.com" target="_blank"> Brothers: A Tale of Two Sons</a> and
+				<a class="small-link" href="https://www.ea.com/games/a-way-out" target="_blank"> A Way Out. </a>
+			</p>
+			<h2 style="margin-bottom: 0">Contact</h2>
+			<p style="margin-top: 0">
+				Email: jeffreyhui76@gmail.com<br>
+				Phone: (415) 283-7654<br>
+				LinkedIn: <a class="small-link" href="https://www.linkedin.com/in/jeffreycfhui/" target="_blank">Jeffrey Hui</a><br>
+				GitHub: <a class="small-link" href="https://github.com/okamiko" target="_blank">okamiko</a><br>
+			</p>
+			<h2 style="margin-bottom: 0">Classes I've taken</h2>
+			<h3 style="margin: 0 auto; color: var(--dim-shadow)">Game Design</h3>
+			<ul style="margin-top: 0">
+				<li>Algorithm Music</li>
+				<li>Foundations of Video Game Design</li>
+				<li>Game Platforms</li>
+				<li>Game Systems</li>
+				<li>Procedural Content Generation</li>
+				<li>Visual Communication and Interactive Design</li>
+			</ul>
+			<h3 style="margin: 0 auto; color: var(--dim-shadow)">Computer Science</h3>
+			<ul style="margin-top: 0">
+				<li>Advanced Programming</li>
+				<li>Algorithms and Abstract Data Types</li>
+				<li>Applied Discrete Mathematics</li>
+				<li>Data Structures</li>
+				<li>Linear Algebra</li>
+				<li>Mobile Applications</li>
+				<li>Web Applications</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer" onclick="closeMenu()">
+		<a class="otherLinks" href="https://github.com/okamiko" target="_blank">GitHub</a>
+		<a class="otherLinks" href="https://www.linkedin.com/in/jeffreycfhui/" target="_blank">LinkedIn</a>
+		<p style="color: var(--silver-wings)">&copy; 2018 Jeffrey Hui</p>
+	</div>
+</body>
+<script type='text/javascript' src='scripts/modal.js'></script>
+<script type='text/javascript' src='scripts/scroll.js'></script>
+</html>

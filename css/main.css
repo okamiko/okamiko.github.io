@@ -1,0 +1,252 @@
+@import url(colors.css);
+@import url(modal.css);
+@import url(projects.css);
+
+#to-top:hover {
+    opacity: 1 /* Hover turn grey */
+}
+#to-top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 16px; /* Place the button at the bottom of the page */
+    right: 16px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    background: var(--dim-shadow); /* Background color of top button */
+    color: var(--silver-wings); /* Literal font color */
+    opacity: .7; /* Hover effect */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 12px; /* Some padding */
+    border-radius: 6px; /* Rounded corners */
+    font-size: 14px; /* Increase font size */
+}
+#me {
+    padding-top:30px;
+    width: 40%; /* Picture of me */
+}
+
+html {
+    scroll-behavior: smooth; /* Automatically will apply this effect during scrolling to the anchor links */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Mont or bust */
+    margin: 0; /* 360 AOE */
+    line-height: 1.75; /* Spacing between font */
+}
+
+#navbar {
+    position: fixed; /* Locked on top */
+    background-color: var(--seesan); /* Dark grey bar */
+    width: 100%; /* Fill the whole bar */
+    text-align: center; /* Center text */
+    box-shadow: 0 20px 50px rgba(19, 21, 26, 0.3); /* Drop shadow below navbar */
+    z-index: 9999 /* Stays above everything else */
+}
+
+.header-name,
+.nav-links {
+    color: white; /* Projects Engineering Jeffrey Resumes About/Contact */
+    white-space: nowrap;
+    width: 15%; /* Spacing left and right */
+    padding: 16px 30px; /* Top and bottom, right and left */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em; /* 120% increase */
+    display: inline-block; /* Does not add a line-break after the element, so the element can sit next to other elements */
+} 
+
+.nav-links:hover {
+    color: var(--tracer); /* Orange highlight */
+    text-shadow: 0 0 12px var(--tracer); /* Orange shadow */
+    transition: color 1.5s; /* When hovered, take more time to transition to full solid orange */
+}
+
+.icon {
+    display: none /* Hide hamburger */
+}
+
+.header-name {
+    letter-spacing: 3px; /* Jeffrey C Hui */
+    margin: 0; /* Spacing */
+    font-size: 2.0em; /* Tad bigger than nav-links */
+    line-height: 1px; /* Spacing */
+    cursor: default /* When hovered, make sure stays consistent */
+}
+
+span.middle {
+    color: gray /* C */
+}
+
+span.last {
+    color: var(--tracer) /* Hui */
+}
+
+/* Designer & Front End Developer, Projects, Engineering, Resumes, About/Contact */
+.intro,
+.section-title h2 {
+    font-family: Montserrat, sans-serif;
+    text-shadow: 0 0 18px #000
+}
+
+#banner {
+    display: flex;
+    justify-content: center; /* Center Front Page Text */
+    flex-direction: column; /* Top down 1 2 3 */
+    height: 100vh; /*100% of the viewport width */
+    background: url(../static/img/0_shroommates/kitchen_room.png) center center no-repeat fixed;
+    background-size: cover; /* Zoom out = stay there */
+    text-align: center
+}
+
+.intro {
+    letter-spacing: 1px; /* Same as below for consistency sake */
+    margin-bottom: .25em;
+    line-height: 1.25;
+    font-size: 3em;
+    color: var(--tracer);
+    animation: fadein 4s
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        letter-spacing: 0
+    }
+    to {
+        opacity: 1;
+        letter-spacing: 1px /* Consistency */
+    }
+}
+
+.pitch {
+    width: 500px;
+    margin: 0 auto;
+    color: var(--silver-wings); /* White color Hi, */
+    animation: fadein2 4s;
+    text-shadow: 0 0 12px #000
+}
+
+@keyframes fadein2 {
+    0%,
+    50% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+.anchor {
+    position: relative;
+    top: -61px;
+}
+
+.section-title {
+    padding: 1em 3em; /* Thickness of Dividers */
+    text-align: center;
+    background-color: var(--seesan)
+}
+
+.section-title h2 { /* Titles themselves */
+    margin: 0;
+    padding-top: 4px;
+    font-size: 2em;
+    color: var(--tracer);
+    text-shadow: 0 0 48px rgba(249, 158, 26, .5)
+}
+
+.section {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em 0
+    line-height: 3
+}
+
+.section-grid {
+    padding: 2em 8em; /* Top and bottom of the white space */
+    display: grid; /* Make em line up nice */
+    grid-template-columns: repeat(3, 1fr); /* Repeat 3 times per row, 1 fraction each */
+    grid-gap: 1em /* LRUD */
+}
+
+.small-link {
+    color: var(--arc-blue);
+    text-decoration: none
+}
+
+.small-link:hover {
+    text-decoration: underline
+}
+
+::-webkit-scrollbar { /* Take away scroll bar */
+    display: none
+}
+
+.footer {
+    /*Top and bottom padding 48px. Right and left padding 12px */
+    padding: 48px 12px;
+    background-color: var(--seesan); 
+    text-align: center
+}
+
+a.otherLinks {
+    margin: 2%; /* Spread it out a bit */
+    color: var(--arc-blue);
+    text-decoration: none /* Underline */
+}
+
+.footer p {
+    margin-top: 32px;
+    margin-bottom: 0
+}
+
+@media screen and (max-width:1280px) {
+    .pitch {
+        width: auto;
+        margin: 0 16px
+    }
+}
+@media screen and (max-width:1280px) {
+    /* Hides Projects Engineer Resumes About/Contact */
+    .header-name,
+    .nav-links {
+        display: none;
+    }
+    /* Hamburger right side */
+    a.icon {
+        float: right;
+        display: block;
+    }
+    /* Locks nav-links in place */
+    .nav-links {
+        width: auto
+    }
+    /* More locking for hamburger */
+    #navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+    /* Shift left nav-links*/
+    #navbar.responsive a {
+        display: block;
+        text-align: left 
+    }
+}
+@media screen and (max-width:1280px) {
+    .anchor { /* top padding */
+        top: -50px
+    }
+    .section {
+        width: auto;
+        padding: .5em;
+        margin: 0
+    }
+    .section-grid {
+        grid-template-columns: repeat(auto-fit, 100%)
+    }
+    .section-title {
+        padding: 0
+    }
+}
