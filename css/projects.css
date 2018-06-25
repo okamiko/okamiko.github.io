@@ -1,14 +1,17 @@
-.project-note,
-.project-title {
-    display: inline;
-    line-height: 1
+.project-note, /* Flint - Modal(Flint - and the descrip) */
+.project-title { 
+    display: inline; 
+    color: var(--arc-blue)
+}
+.project-indent p{
+    text-indent: 5%;
 }
 
 .card {
     box-shadow: 0 18px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .2);
-    transition: .3s;
+    transition: .3s; 
     width: 100%;
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: #fff
 }
 
@@ -17,15 +20,10 @@
     cursor: pointer
 }
 
+/* Resume underline remove */
 .link-card {
     text-decoration: none;
     color: #000
-}
-
-.card-container {
-    margin-top: 1em;
-    line-height: 1;
-    padding: 2px 1em
 }
 
 .card-image {
@@ -35,22 +33,9 @@
     border-radius: 5px 5px 10px 10px
 }
 
-.project-title {
-    color: var(--arc-blue)
-}
-
-.project-indent p{
-    text-indent: 5%;
-}
-.card p {
-    line-height: 1.25
-}
-
-@media screen and (max-width:1280px) {
-    .card {
-        width: 100%
-    }
-    #hidden {
-        display: none
-    }
+/* Two lines of text */
+.card-container {
+    margin-top: 1em;
+    line-height: 1;
+    padding: 2px 1em
 }

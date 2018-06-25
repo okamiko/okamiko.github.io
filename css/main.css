@@ -21,7 +21,7 @@
     font-size: 14px; /* Increase font size */
 }
 #me {
-    padding-top:30px;
+    padding-top: 30px;
     width: 40%; /* Picture of me */
 }
 
@@ -56,8 +56,8 @@ body {
 } 
 
 .nav-links:hover {
-    color: var(--tracer); /* Orange highlight */
-    text-shadow: 0 0 12px var(--tracer); /* Orange shadow */
+    color: var(--deep-blue); /* Orange highlight */
+    text-shadow: 0 0 12px var(--deep-blue); /* Orange shadow */
     transition: color 1.5s; /* When hovered, take more time to transition to full solid orange */
 }
 
@@ -78,7 +78,7 @@ span.middle {
 }
 
 span.last {
-    color: var(--tracer) /* Hui */
+    color: var(--deep-blue); /* Hui */
 }
 
 /* Designer & Front End Developer, Projects, Engineering, Resumes, About/Contact */
@@ -93,7 +93,11 @@ span.last {
     justify-content: center; /* Center Front Page Text */
     flex-direction: column; /* Top down 1 2 3 */
     height: 100vh; /*100% of the viewport width */
-    background: url(../static/img/0_shroommates/kitchen_room.png) center center no-repeat fixed;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(../static/img/0_shroommates/kitchen_room.png) center center no-repeat fixed;
     background-size: cover; /* Zoom out = stay there */
     text-align: center
 }
@@ -103,7 +107,7 @@ span.last {
     margin-bottom: .25em;
     line-height: 1.25;
     font-size: 3em;
-    color: var(--tracer);
+    color: var(--deep-blue);
     animation: fadein 4s
 }
 
@@ -151,11 +155,11 @@ span.last {
     margin: 0;
     padding-top: 4px;
     font-size: 2em;
-    color: var(--tracer);
+    color: var(--deep-blue);
     text-shadow: 0 0 48px rgba(249, 158, 26, .5)
 }
 
-.section {
+.section { /* Individual boxes */
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -179,10 +183,6 @@ span.last {
     text-decoration: underline
 }
 
-::-webkit-scrollbar { /* Take away scroll bar */
-    display: none
-}
-
 .footer {
     /*Top and bottom padding 48px. Right and left padding 12px */
     padding: 48px 12px;
@@ -197,7 +197,7 @@ a.otherLinks {
 }
 
 .footer p {
-    margin-top: 32px;
+    margin-top: 20px; /* Copyright */
     margin-bottom: 0
 }
 
@@ -228,7 +228,7 @@ a.otherLinks {
         right: 0;
         top: 0
     }
-    /* Shift left nav-links*/
+    /* Shift left nav-links */
     #navbar.responsive a {
         display: block;
         text-align: left 
@@ -238,7 +238,7 @@ a.otherLinks {
     .anchor { /* top padding */
         top: -50px
     }
-    .section {
+    .section { /* Individual proj boxes */
         width: auto;
         padding: .5em;
         margin: 0
