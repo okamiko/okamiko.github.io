@@ -34,7 +34,59 @@
 	<div onclick="closeMenu()"> <!-- Click anywhere = close hamburger -->
 		<div id="game-projects" class="anchor"></div>
 		<div id="game-projects-actual" class="section-title">
-			<h2>PROJECTS</h2>
+			<h2>ENGINEERING</h2>
+		</div>
+
+		<div class="section section-grid">
+			<div id="subscriptionsplitter" class="card overlay" onclick="openModal(this)">
+				<img class="card-image" src="static/img/4_subscription_splitter/subscription_splitter.png" />
+				<div class="card-container">
+					<h4 class="project-title">Subscription Splitter</h4>
+					<p class="project-note">&mdash; Used MongoDB Express.js Node.js</p>
+					<p><i>"Can I join your group?"</i></p>
+				</div>
+			</div>
+			<div id="subscriptionsplitter-modal" class="modal">
+				<div class="modal-content">
+					<span id="subscriptionsplitter-close" class="close">&times;</span>
+					<div class="project-header">
+						<h2 class="project-title">Subscription Splitter |</h2>
+						<h3 class="project-note">Used MongoDB Express.js Node.js</h3>
+						<p><i>"College got me making illegal applications"</i></p>
+					</div>
+					<div class="project-indent">
+						<p>
+							Subscription Splitter is a web application that aims to serve as a platform so anyone can find people to split the cost of a variety of services such as Netflix, Hulu, Chegg. Users must create an acccount before they are able to make a post. The app allows users to leave comments to let people contact each other. Database is hosted using mlab.
+							Check out the website <a class="small-link" href="https://calm-badlands-13726.herokuapp.com" target="_blank">here</a>. 							
+						</p>
+						<ul>
+							<li>Leading and delegating tasks to five other programmers</li>
+							<li>Implemented functionalities such as:
+								<ul>
+									<li>Authentication using Passport.js</li>
+									<li>Routing using Express.js</li>
+									<li>Page Layout using Bootstrap</li>
+									<li>Using MongoDB to store user login/comments</li>
+								</ul>
+							</li>
+						</ul>
+						<h2>Screenshots</h2>
+					</div>
+					<div class="gallery">
+						<img class="modal-image" src="static/img/4_subscription_splitter/subscription_splitter.png" width=33% height=33%>
+					</div>
+					<div style="text-align: center">
+						<span id="subscriptionsplitter-close-btn" class="close-btn">Close</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<!-- Engineering -->
+	    <div id="engineering-projects" class="anchor"></div>
+				<div id="engineering-projects-actual" class="section-title">
+				<h2>Game Projects</h2>
 		</div>
 		<div class="section section-grid">
 			<!-- Shroommates -->
@@ -202,71 +254,12 @@
 				</div>
 			</div>
 		</div>
-		<!-- Engineering -->
-	    <div id="engineering-projects" class="anchor"></div>
-				<div id="engineering-projects-actual" class="section-title">
-				<h2>ENGINEERING</h2>
-		</div>
-		<div class="section section-grid">
-			<div id="subscriptionsplitter" class="card overlay" onclick="openModal(this)">
-				<img class="card-image" src="static/img/4_subscription_splitter/subscription_splitter.png" />
-				<div class="card-container">
-					<h4 class="project-title">Subscription Splitter</h4>
-					<p class="project-note">&mdash; Used MongoDB Express.js Node.js</p>
-					<p><i>"Can I join your group?"</i></p>
-				</div>
-			</div>
-			<div id="subscriptionsplitter-modal" class="modal">
-				<div class="modal-content">
-					<span id="subscriptionsplitter-close" class="close">&times;</span>
-					<div class="project-header">
-						<h2 class="project-title">Subscription Splitter |</h2>
-						<h3 class="project-note">Used MongoDB Express.js Node.js</h3>
-						<p><i>"College got me making illegal applications"</i></p>
-					</div>
-					<div class="project-indent">
-						<p>
-							Subscription Splitter is a web application that aims to serve as a platform so anyone can find people to split the cost of a variety of services such as Netflix, Hulu, Chegg. Users must create an acccount before they are able to make a post. The app allows users to leave comments to let people contact each other. Database is hosted using mlab.
-							Check out the website <a class="small-link" href="https://calm-badlands-13726.herokuapp.com" target="_blank">here</a>. 							
-						</p>
-						<ul>
-							<li>Leading and delegating tasks to five other programmers</li>
-							<li>Implemented functionalities such as:
-								<ul>
-									<li>Authentication using Passport.js</li>
-									<li>Routing using Express.js</li>
-									<li>Page Layout using Bootstrap</li>
-									<li>Using MongoDB to store user login/comments</li>
-								</ul>
-							</li>
-						</ul>
-						<h2>Screenshots</h2>
-					</div>
-					<div class="gallery">
-						<img class="modal-image" src="static/img/4_subscription_splitter/subscription_splitter.png" width=33% height=33%>
-					</div>
-					<div style="text-align: center">
-						<span id="subscriptionsplitter-close-btn" class="close-btn">Close</span>
-					</div>
-				</div>
-			</div>
-		</div>
-
+	
 		<div id="resume" class="anchor" ></div>
 		<div id="resume-actual" class="section-title">
 			<h2>RESUMES</h2>
 		</div>
 		<div class="section section-grid">
-			<a class="link-card" href="static/img/resume/hui-jeffrey_resume_gg.pdf" type="application/pdf" target="_blank">
-				<div id="game-resume" class="card">
-					<img class="card-image" src="static/img/maple_1.png" />
-					<div class="card-container">
-						<h4 class="project-title">Games</h4>
-						<p class="project-note">&mdash; For game recruiters</p>
-						<p><i>"Most games are just colliders colliding with other colliders right?"</i></p>
-					</div>
-				</div>
-			</a>
 			<a class="link-card" href="static/img/resume/hui-jeffrey_resume_cc.pdf" type="application/pdf" target="_blank">
 				<div id="work-resume" class="card">
 					<img class="card-image" src="static/img/maple_2.png" />
@@ -274,6 +267,16 @@
 						<h4 class="project-title">Engineering</h4>
 						<p class="project-note">&mdash; For engineering recruiters</p>
 						<p><i>"Literally for loops"</i></p>
+					</div>
+				</div>
+			</a>
+			<a class="link-card" href="static/img/resume/hui-jeffrey_resume_gg.pdf" type="application/pdf" target="_blank">
+				<div id="game-resume" class="card">
+					<img class="card-image" src="static/img/maple_1.png" />
+					<div class="card-container">
+						<h4 class="project-title">Games</h4>
+						<p class="project-note">&mdash; For game recruiters</p>
+						<p><i>"Most games are just colliders colliding with other colliders right?"</i></p>
 					</div>
 				</div>
 			</a>
@@ -292,7 +295,7 @@
 			<p>
 				I'm a Computer Science: Computer Game Design student at the University of California, Santa Cruz.
 				I've taken various game design courses, ranging from making music for games in PureData, to studying procedural content generation, to making games with a studio of talented interdisciplinary students.
-				I'm proficient at using JavaScript for web development, and have experience developing a full stack web application using MongoDB, Express.js, and Node.js. I am also proficient at object-oriented programming in Java. Additionally, I've dabbled in a small amount of C++ and Python. I also like to think I have a decent eye for design.
+				I'm proficient at using JavaScript for web development, and have experience developing a full stack web application using MongoDB, Express.js, and Node.js. I am also proficient at object-oriented programming in Java. Additionally, I've dabbled in a fair amount of C++. I also like to think I have a decent eye for design.
 				I'm currently creeping into the proficient/experienced phase for game engines such as Unreal Engine 4.
 			</p>
 			<p>
@@ -324,6 +327,16 @@
 				GitHub: <a class="small-link" href="https://github.com/okamiko" target="_blank">okamiko</a><br>
 			</p>
 			<h2 style="margin-bottom: 0">Classes I've taken</h2>
+			<h3 style="margin: 0 auto; color: var(--dim-shadow)">Computer Science</h3>
+			<ul style="margin-top: 0">
+				<li>Algorithms and Abstract Data Types</li>
+				<li>Applied Discrete Mathematics</li>
+				<li>Computer System/Assembly Language</li>
+				<li>Data Structures</li>
+				<li>Linear Algebra</li>
+				<li>Mobile Applications</li>
+				<li>Web Applications</li>
+			</ul>
 			<h3 style="margin: 0 auto; color: var(--dim-shadow)">Game Design</h3>
 			<ul style="margin-top: 0">
 				<li>Algorithmic Music</li>
@@ -337,15 +350,6 @@
 				<li>Procedural Content Generation</li>
 				<li>Video Games/Culture</li>
 				<li>Visual Communication and Interactive Design</li>
-			</ul>
-			<h3 style="margin: 0 auto; color: var(--dim-shadow)">Computer Science</h3>
-			<ul style="margin-top: 0">
-				<li>Applied Discrete Mathematics</li>
-				<li>Computer System/Assembly Language</li>
-				<li>Data Structures</li>
-				<li>Linear Algebra</li>
-				<li>Mobile Applications</li>
-				<li>Web Applications</li>
 			</ul>
 		</div>
 	</div>
