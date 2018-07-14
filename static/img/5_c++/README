@@ -1,0 +1,13 @@
+To compile just 1 Classroom and test the functionalities of just 1 Classroom
+1. g++ -std=c++11 main.cpp Classroom.cpp -o main
+2. uncomment myClassManager and test code
+
+
+To compile ClassroomManager and test the functionalities of all Classrooms.
+1. g++ -std=c++11 main.cpp ClassroomManager.cpp Classroom.cpp -o main
+2. leave everything uncommented
+
+
+To compile everything fast
+1. type make
+2. ./main
