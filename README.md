@@ -1,2 +1,2 @@
 # okamiko.github.io
-my website
+website
