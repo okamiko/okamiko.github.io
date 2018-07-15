@@ -83,7 +83,7 @@
 				<div class="card-container">
 					<h4 class="project-title">Classroom Manager</h4>
 					<p class="project-note">&mdash; C++</p>
-					<p><i>"!"</i></p>
+					<p><i>"Who overslept"</i></p>
 				</div>
 			</div>
 			<div id="classroom-modal" class="modal">
@@ -138,6 +138,50 @@
 					</div>
 					<div style="text-align: center">
 						<span id="browsergraphics-close-btn" class="close-btn">Close</span>
+					</div>
+				</div>
+			</div>
+			<div id="hashlandscapes" class="card overlay" onclick="openModal(this)">
+				<img class="card-image" src="static/img/7_hash_landscapes/assets/landing.png" />
+				<div class="card-container">
+					<h4 class="project-title">Hash Landscapes</h4>
+					<p class="project-note">&mdash;p5.js, Perlin Noise, Hash Trees</i></p>
+					<p><i>"Dolphins, Boats, and Waves!"</i></p>
+				</div>
+			</div>
+			<div id="hashlandscapes-modal" class="modal">
+				<div class="modal-content">
+					<span id="hashlandscapes-close" class="close">&times;</span>
+					<div class="project-header">
+						<h2 class="project-title">Hash Landscapes |</h2>
+						<h3 class="project-note">p5.js, Perlin Noise, Hash Trees</h3>
+						<p><i>"Pseudo-infinite, pseudo-random"</i></p>
+					</div>
+					<div class="project-indent">
+						<p>
+							In this programming assignment, you’ll create a pseudo-infinite, pseudo-random terrain design exploiting the idea of hash trees. Every minute detail of your world should be uniquely determined by a user-provided worldgen key. Practice goals: Use noise functions to create smooth variations. Use hash trees to make repeatable random choices. Derive both continuous and discrete choices from the discrete state of the hash. Click <a class="small-link" href="https://github.com/okamiko/okamiko.github.io/tree/master/static/img/6_browser_graphics" target="_blank">this</a> to view the repo.
+						</p>
+						<ul>
+							<li>Implemented functionalities such as:
+								<ul>
+									<li>Loading images</li>
+									<li>One-time setup</li>
+									<li>Variation of tiles using a switch case in myDrawTile(i,j,variation) and "animated" assets</li>
+									<li>Vertical offset of tile (i,j) using millis() to further emphasize height</li>
+									<li>Tile Variation</li>
+									<li>Setting the seed value for noise(). By default, noise() produces different results each time the program is run. Different world by entering a different key</li>
+								</ul>
+							</li>
+						</ul>
+						<h2>Screenshots</h2>
+					</div>
+					<div class="gallery">
+						<img class="modal-image" src="static/img/7_hash_landscapes/assets/empty.png" width=33% height=20%>
+						<img class="modal-image" src="static/img/7_hash_landscapes/assets/myDrawTile.png" width=33% height=20%>
+						<img class="modal-image" src="static/img/7_hash_landscapes/assets/gif.gif" width=33% height=20%>					
+					</div>
+					<div style="text-align: center">
+						<span id="hashlandscapes-close-btn" class="close-btn">Close</span>
 					</div>
 				</div>
 			</div>
