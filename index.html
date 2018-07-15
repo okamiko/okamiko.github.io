@@ -31,7 +31,7 @@
 	</div>
 	<div onclick="closeMenu()"> <!-- Click anywhere = close hamburger -->
 		<div id="engineering-projects" class="anchor"></div>
-		<div id="game-projects-actual" class="section-title">
+		<div class="section-title">
 			<h2>ENGINEERING PROJECTS</h2>
 		</div>
 
@@ -109,10 +109,42 @@
 					</div>
 				</div>
 			</div>
+			<div id="browsergraphics" class="card overlay" onclick="openModal(this)">
+				<img class="card-image" src="static/img/6_browser_graphics/assets/img/aran.png" />
+				<div class="card-container">
+					<h4 class="project-title">Browser Graphics</h4>
+					<p class="project-note">&mdash;p5.js</i></p>
+					<p><i>"Maplestory!"</i></p>
+				</div>
+			</div>
+			<div id="browsergraphics-modal" class="modal">
+				<div class="modal-content">
+					<span id="browsergraphics-close" class="close">&times;</span>
+					<div class="project-header">
+						<h2 class="project-title">Browser Graphics |</h2>
+						<h3 class="project-note">p5.js</h3>
+						<p><i>"Generativity"</i></p>
+					</div>
+					<div class="project-indent">
+						<p>
+							In this programming assignment, you’ll create a program that generativity and interactively reinterprets an image of your own selection. Practice goals: Start a local web server. Edit and debug JavaScript in the Chrome browser’s development tools. Use P5js to read from and draw on images. Start thinking about generativity. Click <a class="small-link" href="https://calm-badlands-13726.herokuapp.com" target="_blank">this</a> to view the repo.
+						</p>
+						<h2>Screenshots</h2>
+					</div>
+					<div class="gallery">
+						<img class="modal-image" src="static/img/6_browser_graphics/assets/img/aran.gif" width=33% height=33%>
+						<img class="modal-image" src="static/img/6_browser_graphics/assets/img/aran.png" width=33% height=33%>
+						<img class="modal-image" src="static/img/6_browser_graphics/assets/img/aran.jpg" width=33% height=33%>					
+					</div>
+					<div style="text-align: center">
+						<span id="browsergraphics-close-btn" class="close-btn">Close</span>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- Engineering -->
 	    <div id="game-projects" class="anchor"></div>
-				<div id="engineering-projects-actual" class="section-title">
+				<div class="section-title">
 				<h2>Game Projects</h2>
 		</div>
 		<div class="section section-grid">
