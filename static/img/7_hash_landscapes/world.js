@@ -86,7 +86,6 @@ function myTileHeight(i, j) {
 
 //Implement this
 function myTileVariation(i, j, height) {
-    // return (i%10<2||j%10<2)?0:1;
     // dark water
     if (noise(i, j) < 0.5) {
         // inital state: empty
