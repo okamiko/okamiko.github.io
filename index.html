@@ -11,7 +11,6 @@
 	<div>
 		<button onclick="toTop()" id="to-top">Go Top</button>
 	</div>
-
 	<div id="navbar">
 		<a class="nav-links" href="#engineering-projects" onclick="closeMenu()">ENGINEERING PROJECTS</a>
 		<a class="nav-links" href="#game-projects" onclick="closeMenu()">GAME PROJECTS</a>
@@ -34,7 +33,6 @@
 		<div class="section-title">
 			<h2>ENGINEERING PROJECTS</h2>
 		</div>
-
 		<div class="section section-grid">
 			<div id="subscriptionsplitter" class="card overlay" onclick="openModal(this)">
 				<img class="card-image" src="static/img/4_subscription_splitter/subscription_splitter.png" />
@@ -58,7 +56,6 @@
 							Check out the website <a class="small-link" href="https://calm-badlands-13726.herokuapp.com" target="_blank">here</a>.
 						</p>
 						<ul>
-							<li>Leading and delegating tasks to five other programmers</li>
 							<li>Implemented functionalities such as:
 								<ul>
 									<li>Authentication using Passport.js</li>
@@ -105,7 +102,7 @@
 						<img class="modal-image" src="static/img/5_c++/classroom.png" width=33% height=33%>
 					</div>
 					<div style="text-align: center">
-						<span id="subscriptionsplitter-close-btn" class="close-btn">Close</span>
+						<span id="classroom-close-btn" class="close-btn">Close</span>
 					</div>
 				</div>
 			</div>
@@ -387,6 +384,47 @@
 					</div>
 					<div style="text-align: center">
 						<span id="foley-close-btn" class="close-btn">Close</span>
+					</div>
+				</div>
+			</div>
+			<!-- UE4 Demo -->
+				<div id="Wwise" class="card" onclick="openModal(this)">
+				<img class="card-image" src="static/img/9_wwise_heavy_ue4/demo.jpg"/>
+				<div class="card-container">
+					<h4 class="project-title">Unreal Engine SFX Interactions </h4>
+					<p class="project-note">&mdash; heavy, Wwise, and Pure Data</p>
+					<p><i>"Shroommates addons"</i></p>
+				</div>
+			</div>
+			<div id="Wwise-modal" class="modal">
+				<div class="modal-content">
+					<span id="Wwise-close" class="close">&times;</span>
+					<div class="project-header">
+						<h2 class="project-title">"Unreal Engine SFX Interactions" |</h2>
+						<h3 class="project-note">heavy, Wwise, and Pure Data</h3>
+						<p><i>"Realistic Crickets"</i></p>
+					</div>
+					<div class="project-indent">
+						<p>
+							As this project was an extension of the 170 series (Shroommates the game, where the three of us had planned to implement this audio work), I decided it was better placed in a demo world where the other conflicting sounds of the world don’t overwhelm and drown out the sounds. All the sounds were implemented in Pure Data, imported into heavy, then configured with Wwise into Unreal Engine 4. 
+						</p>
+						Locations all in regards to spawn point:
+						<ul>
+							<li> Jump sounds based on jump height (charge jump in Shroommates, emulated with bounce pad): Straight ahead of the player, the grey rectangular platform </li>
+							<li> Boombox that holds out music is directly to the left and down the hill - changes tempo during the night </li>
+							<li> Lights that give off electric sounds are scattered across the floating islands - run into them to interact, becomes more sporadic and harsh before they break and disappear </li>
+							<li> Cricket noises come out at night, retreat by day </li>
+							<li> Demo available on request</li>
+						</ul>
+						<h2>Screenshots</h2>
+					</div>
+					<div class="gallery">
+						<img class="modal-image" src="static/img/9_wwise_heavy_ue4/cricket.png" width=33% height=200px>
+						<img class="modal-image" src="static/img/9_wwise_heavy_ue4/bg.png" width=33% height=200px>
+						<img class="modal-image" src="static/img/9_wwise_heavy_ue4/ee.png" width=33% height=200px>
+					</div>
+					<div style="text-align: center">
+						<span id="Wwise-close-btn" class="close-btn">Close</span>
 					</div>
 				</div>
 			</div>
