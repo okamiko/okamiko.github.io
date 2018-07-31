@@ -24,7 +24,7 @@
 			Hello!
 		</h1>
 		<p class="pitch">
-			I'm a CS/Game Design graduate of UC Santa Cruz. I am passionate about learning the latest technologies whether that’s the front-end or back-end. I am also passionate in creating polished and responsive applications. Designing and building user interfaces that are user friendly is always the end goal. I am currently open to opportunities within the software engineering discipline and if you feel like we would be a great match, I'd love to hear from you!
+			I'm a CS/Game Design graduate of UC Santa Cruz. I am passionate about learning the latest technologies whether that’s the front-end or back-end. I am also passionate in creating clean, responsive, and user-friendly applications. I am currently open to opportunities within the software engineering discipline and I'd love to hear from you!
 		</p>
 	</div>
 	<div onclick="closeMenu()"> <!-- Click anywhere = close hamburger -->
@@ -47,22 +47,22 @@
 					<div class="project-header">
 						<h2 class="project-title">Subscription Splitter |</h2>
 						<h3 class="project-note">Used MongoDB Express.js Node.js</h3>
-						<p><i>"Is this allowed?"</i></p>
+						<p><i>"Can I join your group?"</i></p>
 					</div>
 					<div class="project-indent">
 						<p>
-							Subscription Splitter is a web application that aims to serve as a platform so anyone can find people to split the cost of a variety of services such as Netflix, Hulu, Chegg. Users must create an acccount before they are able to make a post. The app allows users to leave comments to let people contact each other.
+							Subscription Splitter is a web application that aims to serve as a platform so anyone can find people to split the cost of a variety of services such as Netflix, Chegg, HBO, or Hulu. Users must create an acccount before they are able to make a post. The app allows users to leave comments to let people contact each other.
 							Check out the website <a class="small-link" href="https://calm-badlands-13726.herokuapp.com" target="_blank">here</a>.
 						</p>
-						<ul>
+						<ul class="subscription-splitter">
 							<li>What we accomplished:
 								<ul>
-									<li>Learned about RESTful Routes and how to properly map between HTTP routes and CRUD using Express.js</li>
-									<li>Learned about MongoDB and how to set up models for Schemas and how to associate data using either embedded or referenced methods for one to one relationships, one to many, or many to many relationships.</li>
-									<li>Learned about Node.js and packages such as body-parser, connect-flash, ejs, express, method-override, mongoose, and passport.</li>
-									<li>Learned about Bootstrap styling methods and the infamous grid system.</li>
-									<li>Learned about how to set up environment variables so that production and development databases are unique. Database served on mlab and site hosted on Heroku became the production data, while locally we had a separate MongoDB database for testing purposes.</li>
-									<li>For our project management method, we followed the SCRUM methodology and had weekly standups and burndown charts. Familiarized ourselves with Trello and organized our Sprints there.</li>
+									<li>Used MongoDB to set up models for Schemas and associated the data using either embedded or referenced methods for one to one relationship, one to many, or many to many relationships. An example would be the comment Schema which defined the model of a comment to have the author and description of the comment. Later, we had to associate comments by exporting it as a model to the group Schema and displaying it on the show route. Finally, after authentication was done, comments were then associated with users when the user signed up and then signed in to add comments</li>
+									<li>Used environment variables so that production and development databases are unique. Database served on mlab and site hosted on Heroku became the production data, while locally we had a separate MongoDB database for testing purposes on AWS Cloud9</li>
+									<li>Used RESTful Routes and mapped HTTP routes and CRUD using Express.js</li>
+									<li>Used Node.js and packages such as body-parser, connect-flash, ejs, express, method-override, mongoose, and passport</li>
+									<li>Used Bootstrap styling methods and its grid system</li>
+									<li>For our project management method, we followed the SCRUM methodology and had weekly standups and burndown charts. Familiarized ourselves with Trello and organized our Sprints there</li>
 								</ul>
 							</li>
 						</ul>
@@ -211,24 +211,25 @@
 						<p>
 							Save your mushroom family from the humans in Shroommates, a light-hearted 3D platforming adventure! Solve puzzles through clever use of your environment and get everyone back home safely. You're a little shroom in a big world - squish down for a powerful jump, parachute away with your mushroom cap, and climb vines to get to vantage points around the house. Beware of the human chef bent on putting delicious shrooms on his pizza, and a deadly Shroomba that attacks fungi on sight! <a class="small-link" href="http://playshroommates.com" target="_blank"><i>Shroommates</a></i> is full of funny interactions to discover, catchy music, and a fully voiced cast of colorful characters to meet! Click <a class="small-link" href="https://www.youtube.com/watch?v=5kakWsqaqzs" target="_blank"><i>this</a></i> to watch the game trailer. Final game build coming soon!
 						</p>
-						<ul>
+						<ul class="shroommates-specific">
 							<li>Implementing game behaviors as needed in various areas, such as:
 								<ul>
-									<li>Menus, state managements, programming win and lose conditions</li>
-									<li>Game objects: interact-able items and various trigger box interactions</li>
-									<li>Camera and controller support</li>
-									<li>Environmental lighting & map design</li>
-									<li>Dialogue and credits</li>
+									<li>Game objects: ability to turn on/off lights, bounce on beds or other spongy objects, and open doors which checked if the player has the key or not which then rotated the door ninety degrees.</li>
+									<li>Day night cycle: Five and a half minutes meant one day night cycle. Also used this to help make the trailer for the first four seconds. Also, added in clouds, stars, and a sun – which were all tweakable values to either enhance or diminish the effects of certain elements in the cycle.</li>
+									<li>Camera pans and cutscenes to better guide the player to an objective which were accomplished using trigger box interactions.</li>
+									<li>Environmental lighting, level design(lamps and mirrors with crisp reflection), and shadows/reflections in the world. Also, a drop shadow on the character mushroom to aid the player in platforming. Added LMIV to efficiently handle build time of light.</li>
+									<li>Shop system - controller support for correct textures and a check of twenty coins meant player can buy CD.</li>
+									<li>Menus - included correct textures and sounds for the buttons that were either being unselected, hovered, or selected. Lastly, implemented resolution settings and support for both keyboard, mouse, and controller. Also included tutorial page, back to title, and continue buttons. Lastly, included switching images based on the event of how you have died (Roomba attacked you or timer ran out). Also added in a slow-motion effect when the player died and blurred the screen. </li>
+									<li>Credits – created an animated sequence for the credits in UE4 which slides the image’s y position from 0 to 3402 in twenty-one seconds.</li>
 								</ul>
 							</li>
-							<li>Identified, troubleshooted, and later explained to some team members Git issues and their solutions.</li>
 						</ul>
 						<h2>Screenshots</h2>
 					</div>
 					<div class="gallery">
-						<img class="modal-image" src="static/img/0_shroommates/living_room.png" width=33% height=33%>
-						<img class="modal-image" src="static/img/0_shroommates/bedroom.png" width=33% height=33%>
-						<img class="modal-image" src="static/img/0_shroommates/garden.png" width=33% height=33%>
+						<img class="modal-image" src="static/img/0_shroommates/living_room.png" width=33%>
+						<img class="modal-image" src="static/img/0_shroommates/bedroom.png" width=33%>
+						<img class="modal-image" src="static/img/0_shroommates/garden.png" width=33%>
 					</div>
 					<div style="text-align: center">
 						<span id="shroommates-close-btn" class="close-btn">Close</span>
@@ -336,7 +337,7 @@
 					</div>
 					<div class="project-indent">
 						<p>
-							Flint is a top-down puzzle game where the player has to traverse through an underground water supply, fixing pipes and cleaning up waste before all the clean water is lost. The game’s mechanics focuses primarily on fixing pipes, being able to move through free space, getting to the end of the stage, and the concept of time pressure. Last level is unbeatable because the Flint Michigan water crisis is not as easy to fix. 
+							Flint is a top-down puzzle game where the player must traverse through an underground water supply, fixing pipes and cleaning up waste before all the clean water is lost. The game’s mechanics focuses primarily on fixing pipes, being able to move through free space, getting to the end of the stage, and the concept of time pressure. Last level is unbeatable because the Flint Michigan water crisis is not as easy to fix. 
 							Click <a class="small-link" href="https://create415.itch.io/flint=" target="_blank"><i>this</a></i> to play. 
 							Click <a class="small-link" href="https://github.com/okamiko/okamiko.github.io/tree/master/static/img/3_flint/Flint/Flint" target="_blank"><i>this</a></i> to view the repo.
 						</p>
@@ -344,7 +345,7 @@
 						<ul>
 							<li>Collaborated on game design and balance.</li>
 							<li>Level Designer.</li>
-							<li>Implementing game behaviors as needed in various areas, such as state management and sound design.</li>
+							<li>Implementing game behaviors as needed in various areas, such as state management, sound design, transitions from level to level, and movement of player.</li>
 						</ul>
 						<h2>Screenshots</h2>
 					</div>
@@ -517,6 +518,7 @@
 				Lastly, I also enjoy co-op games a lot, most notably <a class="small-link" href="http://www.brothersthegame.com" target="_blank"> Brothers: A Tale of Two Sons</a> and
 				<a class="small-link" href="https://www.ea.com/games/a-way-out" target="_blank"> A Way Out. </a>
 			</p>
+			<p> Hobbies include swimming, weight lifting at YMCA, movies or sequels, and paddling.</p>
 			<h2 style="margin-bottom: 0">Contact</h2>
 			<p style="margin-top: 0">
 				Email: jeffreyhui76@gmail.com<br>
