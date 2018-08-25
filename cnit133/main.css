@@ -1,0 +1,26 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+    height: 100vh; /*100% of the viewport width */
+    /* Center the image, no repeats allowed, and its fixed*/
+    background: url(https://images.unsplash.com/photo-1495781856580-b3c4e8d21bf9?ixlib=rb-0.3.5&s=58c3d99664a5059c0dd75b84436ff810&auto=format&fit=crop&w=1944&q=80) center center no-repeat fixed; 
+ 	background-size: cover; /*Make sure when I zoom out the background takes up the whole screen*/
+}
+
+ul{
+	list-style-type: none;
+}
+
+.header{
+	text-align: center;
+	color: white;
+}
+
+.list{
+	color: white;
+    width: auto;
+    padding: 16px 50px; /* Top and bottom, right and left */
+} 
+
+a{
+	color: inherit; /*inherit from parent which is li*/
+}
