@@ -40,4 +40,3 @@ var header = document.getElementById("navbar"),
 function stickyToggle() {
     window.pageYOffset >= sticky ? header.classList.add("sticky") : header.classList.remove("sticky")
 }
-

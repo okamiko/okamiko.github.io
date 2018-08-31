@@ -9,7 +9,7 @@
     height: 100%;
     overflow: auto;
     background-color: #000;
-    background-color: rgba(0, 0, 0, .4)
+    background-color: rgba(0, 0, 0, .4);
 }
 
 .modal-content {
@@ -17,7 +17,7 @@
     width: 1000px;
     margin: auto;
     padding: 2em;
-    border-radius: 10px
+    border-radius: 10px;
 }
 
 .close {
@@ -31,48 +31,48 @@
 .close:hover {
     color: #CC575D;
     text-decoration: none;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .close-btn:focus,
 .close-btn:hover {
     text-decoration: underline;
     color: #CC575D;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .gallery {
-    text-align: center
+    text-align: center;
 }
 
 .modal-image {
     border-radius: 5px;
-    transition: .3s
+    transition: .3s;
 }
 
 .modal-image:hover {
     box-shadow: 0 18px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .2);
-    transform: scale(1.05)
+    transform: scale(1.05);
 }
 
 li {
-    line-height: 1.5
+    line-height: 1.5;
 }
 
 @media screen and (max-width:1280px) {
     .modal {
-        padding: 0
+        padding: 0;
     }
     .modal-content {
         width: auto;
         border-radius: 0;
-        padding: 1em
+        padding: 1em;
     }
     .close-btn {
-        display: inline-block
+        display: inline-block;
     }
     .modal-image {
         width: 100%;
-        height: auto
+        height: auto;
     }
 }

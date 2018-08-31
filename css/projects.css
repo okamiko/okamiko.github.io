@@ -19,31 +19,30 @@
     transition: .3s; 
     width: 100%;
     border-radius: 15px;
-    background-color: #fff
+    background-color: #fff;
 }
 
 .card:hover {
     box-shadow: 0 15px 35px rgba(249, 158, 26, .2), 0 5px 15px rgba(229, 138, 6, .4);
-    cursor: pointer
+    cursor: pointer;
 }
 
 /* Resume underline remove */
 .link-card {
     text-decoration: none;
-    color: #000
+    color: #000;
 }
 
 .card-image {
     object-fit: cover;
     width: 100%;
     height: 240px;
-    border-radius: 5px 5px 10px 10px
+    border-radius: 5px 5px 10px 10px;
 }
 
 /* Two lines of text */
 .card-container {
     margin-top: 1em;
     line-height: 1;
-    padding: 2px 1em
+    padding: 2px 1em;
 }
-

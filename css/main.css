@@ -1,9 +1,8 @@
-@import url(colors.css);
 @import url(modal.css);
 @import url(projects.css);
 
 #to-top:hover {
-    opacity: 1 /* Hover turn grey */
+    opacity: 1; /* Hover turn grey */
 }
 #to-top {
     display: none; /* Hidden by default */
@@ -41,7 +40,7 @@ body {
     width: 100%; /* Fill the whole bar */
     text-align: center; /* Center text */
     box-shadow: 0 20px 50px rgba(19, 21, 26, 0.3); /* Drop shadow below navbar */
-    z-index: 9999 /* Stays above everything else */
+    z-index: 9999; /* Stays above everything else */
 }
 
 .header-name,
@@ -62,7 +61,7 @@ body {
 }
 
 .icon {
-    display: none /* Hide hamburger */
+    display: none; /* Hide hamburger */
 }
 
 .header-name {
@@ -70,11 +69,11 @@ body {
     margin: 0; /* Spacing */
     font-size: 2.0em; /* Tad bigger than nav-links */
     line-height: 1px; /* Spacing */
-    cursor: default /* When hovered, make sure stays consistent */
+    cursor: default; /* When hovered, make sure stays consistent */
 }
 
 span.middle {
-    color: gray /* C */
+    color: gray; /* C */
 }
 
 span.last {
@@ -85,7 +84,7 @@ span.last {
 .intro,
 .section-title h2 {
     font-family: Montserrat, sans-serif;
-    text-shadow: 0 0 18px #000
+    text-shadow: 0 0 18px #000;
 }
 
 #banner {
@@ -99,7 +98,7 @@ span.last {
     ),
     url(../static/img/0_shroommates/kitchen_room.png) center center no-repeat fixed;
     background-size: cover; /* Zoom out = stay there */
-    text-align: center
+    text-align: center;
 }
 
 .intro {
@@ -108,17 +107,17 @@ span.last {
     line-height: 1.25;
     font-size: 3em;
     color: #ffd700;
-    animation: fadein 4s
+    animation: fadein 4s;
 }
 
 @keyframes fadein {
     from {
         opacity: 0;
-        letter-spacing: 0
+        letter-spacing: 0;
     }
     to {
         opacity: 1;
-        letter-spacing: 1px /* Consistency */
+        letter-spacing: 1px; /* Consistency */
     }
 }
 
@@ -127,16 +126,16 @@ span.last {
     margin: 0 auto;
     color: #F5F6F7; /* White color Hi, */
     animation: fadein2 4s;
-    text-shadow: 0 0 12px #000
+    text-shadow: 0 0 12px #000;
 }
 
 @keyframes fadein2 {
     0%,
     50% {
-        opacity: 0
+        opacity: 0;
     }
     100% {
-        opacity: 1
+        opacity: 1;
     }
 }
 
@@ -148,7 +147,7 @@ span.last {
 .section-title {
     padding: 1em 3em; /* Thickness of Dividers */
     text-align: center;
-    background-color: #303642
+    background-color: #303642;
 }
 
 .section-title h2 { /* Titles themselves */
@@ -156,55 +155,55 @@ span.last {
     padding-top: 4px;
     font-size: 2em;
     color: #ffd700;
-    text-shadow: 0 0 48px rgba(249, 158, 26, .5)
+    text-shadow: 0 0 48px rgba(249, 158, 26, .5);
 }
 
 .section { /* Individual boxes */
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    padding: 2em 0
-    line-height: 3
+    padding: 2em 0;
+    line-height: 3;
 }
 
 .section-grid {
     padding: 2em 8em; /* Top and bottom of the white space */
     display: grid; /* Make em line up nice */
     grid-template-columns: repeat(3, 1fr); /* Repeat 3 times per row, 1 fraction each */
-    grid-gap: 1em /* LRUD */
+    grid-gap: 1em; /* LRUD */
 }
 
 .small-link {
     color: #5294E2;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .small-link:hover {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .footer {
     /*Top and bottom padding 48px. Right and left padding 12px */
     padding: 48px 12px;
     background-color: #303642;
-    text-align: center
+    text-align: center;
 }
 
 a.otherLinks {
     margin: 2%; /* Spread it out a bit */
     color: #5294E2;
-    text-decoration: none /* Underline */
+    text-decoration: none; /* Underline */
 }
 
 .footer p {
     margin-top: 20px; /* Copyright */
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
 @media screen and (max-width:1280px) {
     .pitch {
         width: auto;
-        margin: 0 16px
+        margin: 0 16px;
     }
 }
 @media screen and (max-width:1280px) {
@@ -220,33 +219,33 @@ a.otherLinks {
     }
     /* Locks nav-links in place */
     .nav-links {
-        width: auto
+        width: auto;
     }
     /* More locking for hamburger */
     #navbar.responsive a.icon {
         position: absolute;
         right: 0;
-        top: 0
+        top: 0;
     }
     /* Shift left nav-links */
     #navbar.responsive a {
         display: block;
-        text-align: left 
+        text-align: left;
     }
 }
 @media screen and (max-width:1280px) {
     .anchor { /* top padding */
-        top: -50px
+        top: -50px;
     }
     .section { /* Individual proj boxes */
         width: auto;
         padding: .5em;
-        margin: 0
+        margin: 0;
     }
     .section-grid {
-        grid-template-columns: repeat(auto-fit, 100%)
+        grid-template-columns: repeat(auto-fit, 100%);
     }
     .section-title {
-        padding: 0
+        padding: 0;
     }
 }
