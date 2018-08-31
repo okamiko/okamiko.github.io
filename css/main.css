@@ -12,8 +12,8 @@
     right: 16px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
-    background: var(--dim-shadow); /* Background color of top button */
-    color: var(--silver-wings); /* Literal font color */
+    background: #414A59; /* Background color of top button */
+    color: #F5F6F7; /* Literal font color */
     opacity: .7; /* Hover effect */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 12px; /* Some padding */
@@ -37,7 +37,7 @@ body {
 
 #navbar {
     position: fixed; /* Locked on top */
-    background-color: var(--seesan); /* Dark grey bar */
+    background-color: #303642; /* Dark grey bar */
     width: 100%; /* Fill the whole bar */
     text-align: center; /* Center text */
     box-shadow: 0 20px 50px rgba(19, 21, 26, 0.3); /* Drop shadow below navbar */
@@ -56,8 +56,8 @@ body {
 } 
 
 .nav-links:hover {
-    color: var(--deep-blue); /* Orange highlight */
-    text-shadow: 0 0 12px var(--deep-blue); /* Orange shadow */
+    color: #ffd700; /* Orange highlight */
+    text-shadow: 0 0 12px #ffd700; /* Orange shadow */
     transition: color 1.5s; /* When hovered, take more time to transition to full solid orange */
 }
 
@@ -78,7 +78,7 @@ span.middle {
 }
 
 span.last {
-    color: var(--deep-blue); /* Hui */
+    color: #ffd700; /* Hui */
 }
 
 /* Designer & Front End Developer, Projects, Engineering, Resumes, About/Contact */
@@ -107,7 +107,7 @@ span.last {
     margin-bottom: .25em;
     line-height: 1.25;
     font-size: 3em;
-    color: var(--deep-blue);
+    color: #ffd700;
     animation: fadein 4s
 }
 
@@ -125,7 +125,7 @@ span.last {
 .pitch {
     width: 500px;
     margin: 0 auto;
-    color: var(--silver-wings); /* White color Hi, */
+    color: #F5F6F7; /* White color Hi, */
     animation: fadein2 4s;
     text-shadow: 0 0 12px #000
 }
@@ -148,14 +148,14 @@ span.last {
 .section-title {
     padding: 1em 3em; /* Thickness of Dividers */
     text-align: center;
-    background-color: var(--seesan)
+    background-color: #303642
 }
 
 .section-title h2 { /* Titles themselves */
     margin: 0;
     padding-top: 4px;
     font-size: 2em;
-    color: var(--deep-blue);
+    color: #ffd700;
     text-shadow: 0 0 48px rgba(249, 158, 26, .5)
 }
 
@@ -175,7 +175,7 @@ span.last {
 }
 
 .small-link {
-    color: var(--arc-blue);
+    color: #5294E2;
     text-decoration: none
 }
 
@@ -186,13 +186,13 @@ span.last {
 .footer {
     /*Top and bottom padding 48px. Right and left padding 12px */
     padding: 48px 12px;
-    background-color: var(--seesan); 
+    background-color: #303642;
     text-align: center
 }
 
 a.otherLinks {
     margin: 2%; /* Spread it out a bit */
-    color: var(--arc-blue);
+    color: #5294E2;
     text-decoration: none /* Underline */
 }
 

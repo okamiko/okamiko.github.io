@@ -1,7 +1,7 @@
 .project-note, /* Flint - Modal(Flint - and the descrip) */
 .project-title { 
     display: inline; 
-    color: var(--arc-blue)
+    color: #5294E2;
 }
 .project-indent p{
     text-indent: 5%;

@@ -21,30 +21,23 @@
 }
 
 .close {
-    color: var(--light-gray);
+    color: #AAA;
     float: right;
     font-size: 28px;
-    font-weight: 700
+    font-weight: 700;
 }
 
 .close:focus,
 .close:hover {
-    color: var(--strawberry);
+    color: #CC575D;
     text-decoration: none;
     cursor: pointer
-}
-
-.close-btn {
-    display: none;
-    margin-top: 1em;
-    margin-bottom: 0;
-    color: var(--light-gray)
 }
 
 .close-btn:focus,
 .close-btn:hover {
     text-decoration: underline;
-    color: var(--strawberry);
+    color: #CC575D;
     cursor: pointer
 }
 
