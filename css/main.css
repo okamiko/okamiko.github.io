@@ -1,6 +1,3 @@
-@import url(modal.css);
-@import url(projects.css);
-
 #to-top:hover {
     opacity: 1; /* Hover turn grey */
 }
