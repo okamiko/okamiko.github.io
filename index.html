@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Jeffrey Hui</title>
+	<title>Jeffrey Hui Portfolio</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Jeffrey Hui Portfolio okamiko jeffreyhui.co jeffreyhui76@gmail.com">
+	<meta name="description" content="I am passionate about learning the latest technologies whether that’s the front-end or back-end. I am currently open to opportunities within the software engineering discipline and I'd love to hear from you!">
 	<meta name="author" content="Jeffrey Hui">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index, follow">
@@ -12,7 +12,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-
 <body>
 	<div>
 		<button onclick="toTop()" id="to-top">Go Top</button>
@@ -20,29 +19,32 @@
 	<div id="navbar">
 		<a class="nav-links" href="#engineering-projects" onclick="closeMenu()">ENGINEERING PROJECTS</a>
 		<a class="nav-links" href="#game-projects" onclick="closeMenu()">GAME PROJECTS</a>
-		<h2 class="header-name">JEFFREY<span class="middle">C</span><span class="last">HUI</span></h2>
+		<h1 class="header-name">JEFFREY<span class="middle">C</span><span class="last">HUI</span></h1>
 		<a class="nav-links" href="#resume" onclick="closeMenu()">RESUME</a>
 		<a class="nav-links" href="#about-contact" onclick="closeMenu()">ABOUT/CONTACT</a>
 		<a href="javascript:void(0);" style="font-size:15px;" class="nav-links icon" onclick="toggleMenu()">&#9776;</a>
 	</div>
 	<div id="banner" onclick="closeMenu()">
-		<h1 id="intro" class="intro">
+		<div id="intro" class="intro">
 			Hello!
-		</h1>
+		</div>
 		<p class="pitch">
 			I'm a CS/Game Design graduate of UC Santa Cruz. I am passionate about learning the latest technologies whether that’s the front-end or back-end. I am also passionate in creating clean, responsive, and user-friendly applications. I am currently open to opportunities within the software engineering discipline and I'd love to hear from you!
 		</p>
 	</div>
-	<div onclick="closeMenu()"> <!-- Click anywhere = close hamburger -->
-		<div id="engineering-projects" class="anchor"></div>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+	<div onclick="closeMenu()"> 
+
 		<div class="section-title">
 			<h2>ENGINEERING PROJECTS</h2>
 		</div>
+
 		<div class="section section-grid">
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 			<div id="subscriptionsplitter" class="card overlay" onclick="openModal(this)">
-				<img class="card-image" src="static/img/4_subscription_splitter/subscription_splitter.png" alt="Subscription Splitter" />
+				<img class="card-image" src="static/img/4_subscription_splitter/subscription_splitter.png" alt="Subscription Splitter">
 				<div class="card-container">
-					<h4 class="project-title">Subscription Splitter</h4>
+					<span class="project-title"><strong>Subscription Splitter</strong></span>
 					<p class="project-note">&mdash; MongoDB Express.js Node.js</p>
 					<p><em>"Can I join your group?"</em></p>
 				</div>
@@ -51,8 +53,8 @@
 				<div class="modal-content">
 					<span id="subscriptionsplitter-close" class="close">&times;</span>
 					<div class="project-header">
-						<h2 class="project-title">Subscription Splitter |</h2>
-						<h3 class="project-note">Used MongoDB Express.js Node.js</h3>
+						<span class="project-title"><strong>Subscription Splitter |</strong></span>
+						<span class="project-note">Used MongoDB Express.js Node.js</span>
 						<p><em>"Can I join your group?"</em></p>
 					</div>
 					<div class="project-indent">
@@ -60,7 +62,7 @@
 							Subscription Splitter is a web application that aims to serve as a platform so anyone can find people to split the cost of a variety of services such as Netflix, Chegg, HBO, or Hulu. Users must create an acccount before they are able to make a post. The app allows users to leave comments to let people contact each other.
 							Check out the website <a class="small-link" href="https://calm-badlands-13726.herokuapp.com" target="_blank">here</a>.
 						</p>
-						<ul class="subscription-splitter">
+						<ul class="subscription-specific">
 							<li>What we accomplished:
 								<ul>
 									<li>Used MongoDB to set up models for Schemas and associated the data using either embedded or referenced methods for one to one relationship, one to many, or many to many relationships. An example would be the comment Schema which defined the model of a comment to have the author and description of the comment. Later, we had to associate comments by exporting it as a model to the group Schema and displaying it on the show route. Finally, after authentication was done, comments were then associated with users when the user signed up and then signed in to add comments</li>
@@ -72,7 +74,7 @@
 								</ul>
 							</li>
 						</ul>
-						<h2>Screenshots</h2>
+						<span class="font">Screenshots</span>
 					</div>
 					<div class="gallery">
 						<img class="modal-image" src="static/img/4_subscription_splitter/subscription_splitter.png" alt="Subscription Splitter" style="width:33%; height:33%;">
@@ -82,10 +84,11 @@
 					</div>
 				</div>
 			</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 			<div id="classroom" class="card overlay" onclick="openModal(this)">
-				<img class="card-image" src="static/img/5_c++/classroom.png" alt="Classroom"/>
+				<img class="card-image" src="static/img/5_c++/classroom.png" alt="Classroom">
 				<div class="card-container">
-					<h4 class="project-title">Classroom Manager</h4>
+					<span class="project-title"><strong>Classroom Manager</strong></span>
 					<p class="project-note">&mdash; C++</p>
 					<p><em>"Who overslept"</em></p>
 				</div>
@@ -94,8 +97,8 @@
 				<div class="modal-content">
 					<span id="classroom-close" class="close">&times;</span>
 					<div class="project-header">
-						<h2 class="project-title">Classroom Manager |</h2>
-						<h3 class="project-note">C++</h3>
+						<span class="project-title"><strong>Classroom Manager |</strong></span>
+						<span class="project-note">C++</span>
 						<p><em>"First program in C++"</em></p>
 					</div>
 					<div class="project-indent">
@@ -103,20 +106,21 @@
 							Consider you have an embedded application to be deployed on a set of card readers for a classroom seats management and attendance system. An institute deploys this application on a set of 8 classrooms, with each classroom having 256 available seats. Seats are pre-assigned to students, where by the same seat will be occupied by the same student in all classrooms; i.e. no two students can have the same seat number ever. The seat number of the student will be hardwired on his card. Each student will stamp upon entering and upon leaving a specific class. A student cannot exist in two classes at any point in time. The whole idea is to be able to know how many students are there in any particular class, inquire about a specific student location in any class at any point of time, and to be able also to inquire on the availability of a specific student at any point in time. The maximum number of students that can go to any class is 256, and students are numbered from 0 to 255.
 							Check out the repo <a class="small-link" href="https://github.com/okamiko/okamiko.github.io/tree/master/static/img/5_c%2B%2B" target="_blank">here</a>.
 						</p>
-						<h2>Screenshots</h2>
+						<span class="font">Screenshots<span>
 					</div>
 					<div class="gallery">
-						<img class="modal-image" src="static/img/5_c++/classroom.png" alt="Classroom" style="width:33%; height:33%;" >
+						<img class="modal-image" src="static/img/5_c++/classroom.png" alt="Classroom" style="width:33%; height:33%;">
 					</div>
 					<div style="text-align: center">
 						<span id="classroom-close-btn" class="close-btn">Close</span>
 					</div>
 				</div>
 			</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 			<div id="browsergraphics" class="card overlay" onclick="openModal(this)">
-				<img class="card-image" src="static/img/6_browser_graphics/assets/img/aran.png" alt="Aran"/>
+				<img class="card-image" src="static/img/6_browser_graphics/assets/img/aran.png" alt="Aran">
 				<div class="card-container">
-					<h4 class="project-title">Browser Graphics</h4>
+					<span class="project-title"><strong>Browser Graphics</strong></span>
 					<p class="project-note">&mdash;p5.js</p>
 					<p><em>"Maplestory!"</em></p>
 				</div>
@@ -125,15 +129,15 @@
 				<div class="modal-content">
 					<span id="browsergraphics-close" class="close">&times;</span>
 					<div class="project-header">
-						<h2 class="project-title">Browser Graphics |</h2>
-						<h3 class="project-note">p5.js</h3>
+						<span class="project-title"><strong>Browser Graphics |</strong></span>
+						<span class="project-note">p5.js</span>
 						<p><em>"Generativity"</em></p>
 					</div>
 					<div class="project-indent">
 						<p>
 							In this programming assignment, you’ll create a program that generativity and interactively reinterprets an image of your own selection. Practice goals: Start a local web server. Edit and debug JavaScript in the Chrome browser’s development tools. Use P5js to read from and draw on images. Start thinking about generativity. Click <a class="small-link" href="https://github.com/okamiko/okamiko.github.io/tree/master/static/img/6_browser_graphics" target="_blank">this</a> to view the repo.
 						</p>
-						<h2>Screenshots</h2>
+						<span class="font">Screenshots</span>
 					</div>
 					<div class="gallery">
 						<img class="modal-image" src="static/img/6_browser_graphics/assets/img/aran.gif" style="width:33%; height:33%;" alt="Aran gif">
@@ -145,10 +149,11 @@
 					</div>
 				</div>
 			</div>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 			<div id="hashlandscapes" class="card overlay" onclick="openModal(this)">
-				<img class="card-image" src="static/img/7_hash_landscapes/assets/landing.png" alt="Floating Boats"/>
+				<img class="card-image" src="static/img/7_hash_landscapes/assets/landing.png" alt="Floating Boats">
 				<div class="card-container">
-					<h4 class="project-title">Hash Landscapes</h4>
+					<span class="project-title"><strong>Hash Landscapes</strong></span>
 					<p class="project-note">&mdash;p5.js, Perlin Noise, Hash Trees</p>
 					<p><em>"Dolphins, boats, and waves!"</em></p>
 				</div>
@@ -157,8 +162,8 @@
 				<div class="modal-content">
 					<span id="hashlandscapes-close" class="close">&times;</span>
 					<div class="project-header">
-						<h2 class="project-title">Hash Landscapes |</h2>
-						<h3 class="project-note">p5.js, Perlin Noise, Hash Trees</h3>
+						<span class="project-title"><strong>Hash Landscapes |</strong></span>
+						<span class="project-note">p5.js, Perlin Noise, Hash Trees</span>
 						<p><em>"Pseudo-infinite, pseudo-random"</em></p>
 					</div>
 					<div class="project-indent">
@@ -177,7 +182,7 @@
 								</ul>
 							</li>
 						</ul>
-						<h2>Screenshots</h2>
+						<span class="font">Screenshots</span>
 					</div>
 					<div class="gallery">
 						<img class="modal-image" src="static/img/7_hash_landscapes/assets/empty.png" style="width:33%; height:33%;" alt="Starter tiles">
@@ -190,7 +195,8 @@
 				</div>
 			</div>
 		</div>
-		<!-- Engineering -->
+		<!--ENGINEERING END-->
+		<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 	    <div id="game-projects" class="anchor"></div>
 				<div class="section-title">
 				<h2>Game Projects</h2>
@@ -198,9 +204,9 @@
 		<div class="section section-grid">
 			<!-- Shroommates -->
 			<div id="shroommates" class="card overlay" onclick="openModal(this)">
-				<img class="card-image" src="static/img/0_shroommates/bathroom.png" alt="Shroommates bathroom" />
+				<img class="card-image" src="static/img/0_shroommates/bathroom.png" alt="Shroommates bathroom">
 				<div class="card-container">
-					<h4 class="project-title">Shroommates</h4>
+					<span class="project-title"><strong>Shroommates</strong></span>
 					<p class="project-note">&mdash; Unreal Engine</p>
 					<p><em>"Housing ain't cheap here, mate."</em></p>
 				</div>
@@ -209,8 +215,8 @@
 				<div class="modal-content">
 					<span id="shroommates-close" class="close">&times;</span>
 					<div class="project-header">
-						<h2 class="project-title">Shroommates |</h2>
-						<h3 class="project-note">Made with Unreal Engine 4.17.2 (User Test Coordinator, Generalist Programmer)</h3>
+						<span class="project-title"><strong>Shroommates |</strong></span>
+						<span class="project-note">Made with Unreal Engine 4.17.2 (User Test Coordinator, Generalist Programmer)</span>
 						<p><em>"Mushroom!"</em></p>
 					</div>
 					<div class="project-indent">
@@ -235,7 +241,7 @@
 								</ul>
 							</li>
 						</ul>
-						<h2>Screenshots</h2>
+						<span class="font">Screenshots</span>
 					</div>
 					<div class="gallery">
 						<img class="modal-image" src="static/img/0_shroommates/living_room.png" style="width:33%;" alt="Shroommates living room">
@@ -247,11 +253,11 @@
 					</div>
 				</div>
 			</div>
-			<!-- Battlegrounds -->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 			<div id="battlegrounds" class="card" onclick="openModal(this)">
-				<img class="card-image" src="static/img/1_battlegrounds/br_map.png" alt="Battlegrounds" />
+				<img class="card-image" src="static/img/1_battlegrounds/br_map.png" alt="Battlegrounds">
 				<div class="card-container">
-					<h4 class="project-title">Battlegrounds</h4>
+					<span class="project-title"><strong>Battlegrounds</strong></span>
 					<p class="project-note">&mdash; the Board Game</p>
 					<p><em>"Machinations"</em></p>
 				</div>
@@ -260,8 +266,8 @@
 				<div class="modal-content">
 					<span id="battlegrounds-close" class="close">&times;</span>
 					<div class="project-header">
-						<h2 class="project-title">Battlegrounds |</h2>
-						<h3 class="project-note">the Board Game (Systems Designer)</h3>
+						<span class="project-title"><strong>Battlegrounds |</strong></span>
+						<span class="project-note">the Board Game (Systems Designer)</span>
 						<p><em>"When you build a massive base and it's outside the circle."</em></p>
 					</div>
 					<div class="project-indent">
@@ -283,7 +289,7 @@
 							</li>
 							<li>Transferred ideas, rules, and mechanics to visually clean documents for presentation.</li>
 						</ul>
-						<h2>Screenshots</h2>
+						<span class="font">Screenshots</span>
 					</div>
 					<div class="gallery">
 						<img class="modal-image" src="static/img/1_battlegrounds/br_map.png" style="width:33%; height:270px;" alt="Battlegrounds map">
@@ -295,11 +301,11 @@
 					</div>
 				</div>
 			</div>
-			<!-- World Power -->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 			<div id="world-power" class="card" onclick="openModal(this)">
 				<img class="card-image" src="static/img/2_worldpower/wp_board.png" alt="World power board">
 				<div class="card-container">
-					<h4 class="project-title">World Power</h4>
+					<span class="project-title"><strong>World Power</strong></span>
 					<p class="project-note">&mdash; the Board Game</p>
 					<p><em>"Tabletop"</em></p>
 				</div>
@@ -308,8 +314,8 @@
 				<div class="modal-content">
 					<span id="world-power-close" class="close">&times;</span>
 					<div class="project-header">
-						<h2 class="project-title">World Power |</h2>
-						<h3 class="project-note">the Board Game (Systems Designer)</h3>
+						<span class="project-title"><strong>World Power |</strong></span>
+						<span class="project-note">the Board Game (Systems Designer)</span>
 						<p><em>"Wait, this board game is starting to look a little too realistic."</em></p>
 					</div>
 					<div class="project-indent">
@@ -319,7 +325,7 @@
 						<ul>
 							<li>Collaborated on game design and balance.</li>
 						</ul>
-						<h2>Screenshots</h2>
+						<span class="font">Screenshots</span>
 					</div>
 					<div class="gallery">
 						<img class="modal-image" src="static/img/2_worldpower/wp_board.png" style="width:33%; height:270px;" alt="World power board">
@@ -329,11 +335,11 @@
 					</div>
 				</div>
 			</div>
-			<!-- Flint -->
-				<div id="flint" class="card" onclick="openModal(this)">
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+			<div id="flint" class="card" onclick="openModal(this)">
 				<img class="card-image" src="static/img/3_flint/fl_game.png" alt="Flint game">
 				<div class="card-container">
-					<h4 class="project-title">Flint</h4>
+					<span class="project-title"><strong>Flint</strong></span>
 					<p class="project-note">&mdash; Phaser.js</p>
 					<p><em>"Flint Michigan water crisis"</em></p>
 				</div>
@@ -342,8 +348,8 @@
 				<div class="modal-content">
 					<span id="flint-close" class="close">&times;</span>
 					<div class="project-header">
-						<h2 class="project-title">Flint |</h2>
-						<h3 class="project-note">Generalist Programmer</h3>
+						<span class="project-title"><strong>Flint |</strong></span>
+						<span class="project-note">Generalist Programmer</span>
 						<p><em>"I'm the type of person who tries to save the world."</em></p>
 					</div>
 					<div class="project-indent">
@@ -357,7 +363,7 @@
 							<li>Level Designer.</li>
 							<li>Implementing game behaviors as needed in various areas, such as state management, sound design, transitions from level to level, and movement of player.</li>
 						</ul>
-						<h2>Screenshots</h2>
+						<span class="font">Screenshots</span>
 					</div>
 					<div class="gallery">
 						<img class="modal-image" src="static/img/3_flint/fl_start.png" style="width:33%; height:270px;" alt="Flint start screen">
@@ -368,11 +374,11 @@
 					</div>
 				</div>
 			</div>
-			<!-- OW Bastion -->
-				<div id="foley" class="card" onclick="openModal(this)">
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+			<div id="foley" class="card" onclick="openModal(this)">
 				<img class="card-image" src="static/img/8_foley_overwatch/fps.png" alt="Overwatch foley">
 				<div class="card-container">
-					<h4 class="project-title">Overwatch Foley</h4>
+					<span class="project-title"><strong>Overwatch Foley</strong></span>
 					<p class="project-note">&mdash; Reaper Zoom H1</p>
 					<p><em>"Beep Boop"</em></p>
 				</div>
@@ -381,8 +387,8 @@
 				<div class="modal-content">
 					<span id="foley-close" class="close">&times;</span>
 					<div class="project-header">
-						<h2 class="project-title">"The Last Bastion" |</h2>
-						<h3 class="project-note">Reaper, Zoom H1, ReaEQ, ReaComp, ReaVocode</h3>
+						<span class="project-title"><strong>"The Last Bastion" |</strong></span>
+						<span class="project-note">Reaper, Zoom H1, ReaEQ, ReaComp, ReaVocode</span>
 						<p><em>"Beep Boop"</em></p>
 					</div>
 					<div class="project-indent">
@@ -390,7 +396,7 @@
 							What game/genre did you choose? I chose the game Overwatch. Why did you choose it? I chose it because I wanted to experiment with creating robot sounds and I also really enjoyed the Overwatch short itself. How did you approach the sound design? I approached the sound design by making all the nature sounds first. Afterwards, I added in robot sounds and tuned everything up. What technology did you use? I used Reaper for the editing, Zoom H1 for the recording. Also, ReaEQ, ReaComp, ReaVocode - which were all under VST effects. Which sounds were the most challenging? The robot sounds were the most challenging because I had to use tone generators and sound effects from the f(x) section. 
 							Click <a class="small-link" href="https://www.youtube.com/watch?v=oJ1wWqtOJTI" target="_blank"><em>this</em></a> to watch video. Make sure to put on headphones.
 						</p>
-						<h2>Screenshots</h2>
+						<span class="font">Screenshots</span>
 					</div>
 					<div class="gallery">
 						<img class="modal-image" src="static/img/8_foley_overwatch/fps.png" style="width:33%; height:270px;" alt="Overwatch foley">
@@ -400,11 +406,11 @@
 					</div>
 				</div>
 			</div>
-			<!-- UE4 Demo -->
-				<div id="Wwise" class="card" onclick="openModal(this)">
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+			<div id="Wwise" class="card" onclick="openModal(this)">
 				<img class="card-image" src="static/img/9_wwise_heavy_ue4/demo.jpg" alt="UE4 Demo Screen">
 				<div class="card-container">
-					<h4 class="project-title">Unreal Engine SFX Interactions </h4>
+					<span class="project-title"><strong>Unreal Engine SFX Interactions</strong></span>
 					<p class="project-note">&mdash; heavy, Wwise, and Pure Data</p>
 					<p><em>"Shroommates addons"</em></p>
 				</div>
@@ -413,8 +419,8 @@
 				<div class="modal-content">
 					<span id="Wwise-close" class="close">&times;</span>
 					<div class="project-header">
-						<h2 class="project-title">"Unreal Engine SFX Interactions" |</h2>
-						<h3 class="project-note">heavy, Wwise, and Pure Data</h3>
+						<span class="project-title"><strong>"Unreal Engine SFX Interactions" |</strong></span>
+						<span class="project-note">heavy, Wwise, and Pure Data</span>
 						<p><em>"Realistic Crickets"</em></p>
 					</div>
 					<div class="project-indent">
@@ -429,7 +435,7 @@
 							<li> Cricket noises come out at night, retreat by day </li>
 							<li> Demo available on request</li>
 						</ul>
-						<h2>Screenshots</h2>
+						<span class="font">Screenshots</span>
 					</div>
 					<div class="gallery">
 						<img class="modal-image" src="static/img/9_wwise_heavy_ue4/cricket.png" alt="Pure Data Cricket Patch Screenshot" style="width:33%; height:200px;">
@@ -441,11 +447,11 @@
 					</div>
 				</div>
 			</div>
-			<!-- Endless Runner -->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 			<div id="end" class="card" onclick="openModal(this)">
 				<img class="card-image" src="static/img/10_endless/landing.png" alt="Space Runner">
 				<div class="card-container">
-					<h4 class="project-title">Space Runner </h4>
+					<span class="project-title"><strong>Space Runner</strong></span>
 					<p class="project-note">&mdash; Phaser.js</p>
 					<p><em>"Endless runner"</em></p>
 				</div>
@@ -454,15 +460,15 @@
 				<div class="modal-content">
 					<span id="end-close" class="close">&times;</span>
 					<div class="project-header">
-						<h2 class="project-title">"Space Runner" |</h2>
-						<h3 class="project-note">Phaser.js</h3>
+						<span class="project-title"><strong>"Space Runner" |</strong></span>
+						<span class="project-note">Phaser.js</span>
 						<p><em>"Time pressure"</em></p>
 					</div>
 					<div class="project-indent">
 						<p>
 							Small project that served as an introduction to game programming. Requirements included game states and switching, a texture atlas or sprite sheets for in-game images, proper asset loading, player movement(based on you game design), animation, proper collision management, random generation of terrain, pickups, etc, looping background music, sound effects (based on your game design), some form of GUI, proper commenting, and a logical organized file structure. Click <a class="small-link" href="https://github.com/okamiko/okamiko.github.io/tree/master/static/img/10_endless" target="_blank"><em>this</em></a> to view the repo.
 						</p>
-						<h2>Screenshots</h2>
+						<span class="font">Screenshots</span>
 					</div>
 					<div class="gallery">
 						<img class="modal-image" src="static/img/10_endless/landing.gif" alt="Space Runner" style="width:33%; height:200px;">
@@ -475,7 +481,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="resume" class="anchor" ></div>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 		<div id="resume-actual" class="section-title">
 			<h2>RESUME</h2>
 		</div>
@@ -484,14 +490,14 @@
 				<div id="work-resume" class="card">
 					<img class="card-image" src="static/img/maple_2.png" alt="Maplestory">
 					<div class="card-container">
-						<h4 class="project-title">Engineering</h4>
+						<span class="project-title"><strong>Engineering</strong></span>
 						<p class="project-note">&mdash; For engineering recruiters</p>
 						<p><em>":)"</em></p>
 					</div>
 				</div>
 			</a>
 		</div>
-		<div id="about-contact" class="anchor"></div>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 		<div id="about-contact-actual" class="section-title">
 			<h2>ABOUT/CONTACT</h2>
 		</div>
@@ -530,15 +536,15 @@
 				<a class="small-link" href="https://www.ea.com/games/a-way-out" target="_blank"> A Way Out. </a>
 			</p>
 			<p> Hobbies include swimming, weight lifting at YMCA, movies or sequels, and paddling.</p>
-			<h2 style="margin-bottom: 0">Contact</h2>
+			<span class="font"><strong>Contact</strong></span>
 			<p style="margin-top: 0">
 				Email: jeffreyhui76@gmail.com<br>
 				Phone: (415) 283-7654<br>
 				LinkedIn: <a class="small-link" href="https://www.linkedin.com/in/jeffreycfhui/" target="_blank">Jeffrey Hui</a><br>
 				GitHub: <a class="small-link" href="https://github.com/okamiko" target="_blank">okamiko</a><br>
 			</p>
-			<h2 style="margin-bottom: 0">Classes I've taken</h2>
-			<h3 style="margin: 0 auto; color: #414A59">Computer Science</h3>
+			<span class="font" style="margin-bottom: 0"><strong>Classes I've taken</strong></span><br>
+			<span style="margin: 0 auto; color: #414A59"><strong>Computer Science</strong></span>
 			<ul style="margin-top: 0">
 				<li>Algorithms and Abstract Data Types</li>
 				<li>Applied Discrete Mathematics</li>
@@ -548,7 +554,7 @@
 				<li>Mobile Applications</li>
 				<li>Web Applications</li>
 			</ul>
-			<h3 style="margin: 0 auto; color: #414A59">Game Design</h3>
+			<span style="margin: 0 auto; color: #414A59"><strong>Game Design</strong></span>
 			<ul style="margin-top: 0">
 				<li>Algorithmic Music</li>
 				<li>Digital Audio</li>
@@ -572,5 +578,4 @@
 	<script src='scripts/modal.js'></script>
 	<script src='scripts/scroll.js'></script>
 </body>
-
 </html>

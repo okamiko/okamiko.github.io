@@ -1,5 +1,5 @@
-.project-note, /* Flint - Modal(Flint - and the descrip) */
-.project-title { 
+.project-title, /* Flint - Modal(Flint - and the descrip) */
+.project-note { 
     display: inline; 
     color: #5294E2;
 }
@@ -11,8 +11,12 @@
     font-size: 12px;
 }
 
-.subscription-splitter{
+.subscription-specific{
     font-size: 14px;
+}
+.font{
+    font-size: 24px;
+
 }
 .card {
     box-shadow: 0 18px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .2);
