@@ -55,6 +55,10 @@
     transform: scale(1.05);
 }
 
+.modal-indent p{
+    text-indent: 5%;
+}
+
 li {
     line-height: 1.5;
 }

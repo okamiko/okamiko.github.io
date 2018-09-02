@@ -1,10 +1,7 @@
-.project-title, /* Flint - Modal(Flint - and the descrip) */
+.project-title,
 .project-note { 
     display: inline; 
     color: #5294E2;
-}
-.project-indent p{
-    text-indent: 5%;
 }
 
 .shroommates-specific{
@@ -13,10 +10,6 @@
 
 .subscription-specific{
     font-size: 14px;
-}
-.font{
-    font-size: 24px;
-
 }
 .card {
     box-shadow: 0 18px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .2);
@@ -31,12 +24,6 @@
     cursor: pointer;
 }
 
-/* Resume underline remove */
-.link-card {
-    text-decoration: none;
-    color: #000;
-}
-
 .card-image {
     object-fit: cover;
     width: 100%;
@@ -44,7 +31,6 @@
     border-radius: 5px 5px 10px 10px;
 }
 
-/* Two lines of text */
 .card-container {
     margin-top: 1em;
     line-height: 1;

@@ -24,10 +24,10 @@
 		<h1 class="header-name">JEFFREY<span class="middle">C</span><span class="last">HUI</span></h1>
 		<a class="nav-links" href="#resume" onclick="closeMenu()">RESUME</a>
 		<a class="nav-links" href="#about-contact" onclick="closeMenu()">ABOUT/CONTACT</a>
-		<a href="javascript:void(0);" style="font-size:15px;" class="nav-links icon" onclick="toggleMenu()">&#9776;</a>
+		<a class="nav-links icon" href="javascript:void(0);" onclick="toggleMenu()">&#9776;</a>
 	</div>
 	<div id="banner" onclick="closeMenu()">
-		<div id="intro" class="intro">
+		<div class="intro">
 			Hello!
 		</div>
 		<p class="pitch">
@@ -37,6 +37,7 @@
 
 	<div onclick="closeMenu()"> 
 
+		<div id="engineering-projects" class="anchor"></div>
 		<div class="section-title">
 			<h2>ENGINEERING PROJECTS</h2>
 		</div>
@@ -59,7 +60,7 @@
 						<span class="project-note">Used MongoDB Express.js Node.js</span>
 						<p><em>"Can I join your group?"</em></p>
 					</div>
-					<div class="project-indent">
+					<div class="modal-indent">
 						<p>
 							Subscription Splitter is a web application that aims to serve as a platform so anyone can find people to split the cost of a variety of services such as Netflix, Chegg, HBO, or Hulu. Users must create an acccount before they are able to make a post. The app allows users to leave comments to let people contact each other.
 							Check out the website <a class="small-link" href="https://calm-badlands-13726.herokuapp.com" target="_blank">here</a>.
@@ -103,7 +104,7 @@
 						<span class="project-note">C++</span>
 						<p><em>"First program in C++"</em></p>
 					</div>
-					<div class="project-indent">
+					<div class="modal-indent">
 						<p>
 							Consider you have an embedded application to be deployed on a set of card readers for a classroom seats management and attendance system. An institute deploys this application on a set of 8 classrooms, with each classroom having 256 available seats. Seats are pre-assigned to students, where by the same seat will be occupied by the same student in all classrooms; i.e. no two students can have the same seat number ever. The seat number of the student will be hardwired on his card. Each student will stamp upon entering and upon leaving a specific class. A student cannot exist in two classes at any point in time. The whole idea is to be able to know how many students are there in any particular class, inquire about a specific student location in any class at any point of time, and to be able also to inquire on the availability of a specific student at any point in time. The maximum number of students that can go to any class is 256, and students are numbered from 0 to 255.
 							Check out the repo <a class="small-link" href="https://github.com/okamiko/okamiko.github.io/tree/master/static/img/5_c%2B%2B" target="_blank">here</a>.
@@ -135,7 +136,7 @@
 						<span class="project-note">p5.js</span>
 						<p><em>"Generativity"</em></p>
 					</div>
-					<div class="project-indent">
+					<div class="modal-indent">
 						<p>
 							In this programming assignment, you’ll create a program that generativity and interactively reinterprets an image of your own selection. Practice goals: Start a local web server. Edit and debug JavaScript in the Chrome browser’s development tools. Use P5js to read from and draw on images. Start thinking about generativity. Click <a class="small-link" href="https://github.com/okamiko/okamiko.github.io/tree/master/static/img/6_browser_graphics" target="_blank">this</a> to view the repo.
 						</p>
@@ -168,7 +169,7 @@
 						<span class="project-note">p5.js, Perlin Noise, Hash Trees</span>
 						<p><em>"Pseudo-infinite, pseudo-random"</em></p>
 					</div>
-					<div class="project-indent">
+					<div class="modal-indent">
 						<p>
 							In this programming assignment, you’ll create a pseudo-infinite, pseudo-random terrain design exploiting the idea of hash trees. Every minute detail of your world should be uniquely determined by a user-provided worldgen key. Practice goals: Use noise functions to create smooth variations. Use hash trees to make repeatable random choices. Derive both continuous and discrete choices from the discrete state of the hash. Click <a class="small-link" href="https://github.com/okamiko/okamiko.github.io/tree/master/static/img/7_hash_landscapes" target="_blank">this</a> to view the repo.
 						</p>
@@ -198,10 +199,10 @@
 			</div>
 		</div>
 		<!--ENGINEERING END-->
-		
+
 	    <div id="game-projects" class="anchor"></div>
-				<div class="section-title">
-				<h2>Game Projects</h2>
+	    <div class="section-title">
+			<h2>Game Projects</h2>
 		</div>
 		<div class="section section-grid">
 			<!-- Shroommates -->
@@ -221,7 +222,7 @@
 						<span class="project-note">Made with Unreal Engine 4.17.2 (User Test Coordinator, Generalist Programmer)</span>
 						<p><em>"Mushroom!"</em></p>
 					</div>
-					<div class="project-indent">
+					<div class="modal-indent">
 						<p class="shroommates-specific">
 							Save your mushroom family from the humans in Shroommates, a light-hearted 3D platforming adventure! Solve puzzles through clever use of your environment and get everyone back home safely. You're a little shroom in a big world - squish down for a powerful jump, parachute away with your mushroom cap, and climb vines to get to vantage points around the house. Beware of the human chef bent on putting delicious shrooms on his pizza, and a deadly Shroomba that attacks fungi on sight!
 						 	<a class="small-link" href="http://playshroommates.com" target="_blank"><em>Shroommates</em></a>                      
@@ -239,7 +240,7 @@
 									<li>Environmental lighting, level design(lamps and mirrors with crisp reflection), and shadows/reflections in the world. Also, a drop shadow on the character mushroom to aid the player in platforming. Added LMIV to efficiently handle build time of light.</li>
 									<li>Game objects: ability to turn on/off lights, bounce on beds or other spongy objects, and open doors which checked if the player has the key or not which then rotated the door ninety degrees.</li>
 									<li>Menus - included correct textures and sounds for the buttons that were either being unselected, hovered, or selected. Implemented resolution settings and support for both keyboard, mouse, and controller. Also included tutorial page, back to title, and continue buttons. Lastly, included switching images based on the event of how you have died (Roomba attacked you or timer ran out).</li>
-									<li>Shop system - controller support for correct textures and a check of twenty coins meant player can buy CD.</li>									
+									<li>Shop system - controller support for correct textures and a check of twenty coins meant player can buy CD.</li>						
 								</ul>
 							</li>
 						</ul>
@@ -272,7 +273,7 @@
 						<span class="project-note">the Board Game (Systems Designer)</span>
 						<p><em>"When you build a massive base and it's outside the circle."</em></p>
 					</div>
-					<div class="project-indent">
+					<div class="modal-indent">
 						<p>
 							A board game based off of the recent popular trend of battle royale games and a systems design exercise.
 							You've seen the thousands of PUBG and Fortnite knock-offs for PC and smartphones, now check out the board game!
@@ -293,9 +294,9 @@
 						<span class="font">Screenshots</span>
 					</div>
 					<div class="gallery">
-						<img class="modal-image" src="static/img/1_battlegrounds/br_map.png" style="width:33%; height:270px;" alt="Battlegrounds map">
-						<img class="modal-image" src="static/img/1_battlegrounds/br_machinations.png" style="width:33%; height:270px;" alt="Machinations diagram">
-						<img class="modal-image" src="static/img/1_battlegrounds/br_cards.png" style="width:33%; height:270px;" alt="Battleground cards">
+						<img class="modal-image" src="static/img/1_battlegrounds/br_map.png" style="width:33%;" alt="Battlegrounds map">
+						<img class="modal-image" src="static/img/1_battlegrounds/br_machinations.png" style="width:33%;" alt="Machinations diagram">
+						<img class="modal-image" src="static/img/1_battlegrounds/br_cards.png" style="width:33%;" alt="Battleground cards">
 					</div>
 					<div style="text-align: center">
 						<span id="battlegrounds-close-btn" class="close-btn">Close</span>
@@ -319,7 +320,7 @@
 						<span class="project-note">the Board Game (Systems Designer)</span>
 						<p><em>"Wait, this board game is starting to look a little too realistic."</em></p>
 					</div>
-					<div class="project-indent">
+					<div class="modal-indent">
 						<p>
 							A tabletop game with a satirical look at international politics meant to represent our view of the utter insanity, childish incomprehensiblilty, and extensive cheating in the world. It is a four-player game where each player takes on the role of a country's leader and become the world's superpower through use of war, famine, disease, and politicians. Cheating is explicitly allowed and encouraged.
 						</p>
@@ -329,7 +330,7 @@
 						<span class="font">Screenshots</span>
 					</div>
 					<div class="gallery">
-						<img class="modal-image" src="static/img/2_worldpower/wp_board.png" style="width:33%; height:270px;" alt="World power board">
+						<img class="modal-image" src="static/img/2_worldpower/wp_board.png" style="width:33% height:100%;" alt="World power board">
 					</div>
 					<div style="text-align: center">
 						<span id="world-power-close-btn" class="close-btn">Close</span>
@@ -353,7 +354,7 @@
 						<span class="project-note">Generalist Programmer</span>
 						<p><em>"I'm the type of person who tries to save the world."</em></p>
 					</div>
-					<div class="project-indent">
+					<div class="modal-indent">
 						<p>
 							Flint is a top-down puzzle game where the player must traverse through an underground water supply, fixing pipes and cleaning up waste before all the clean water is lost. The game’s mechanics focuses primarily on fixing pipes, being able to move through free space, getting to the end of the stage, and the concept of time pressure. Last level is unbeatable because the Flint Michigan water crisis is not as easy to fix. 
 							Click <a class="small-link" href="https://create415.itch.io/flint=" target="_blank"><em>this </em></a> to play. 
@@ -367,8 +368,8 @@
 						<span class="font">Screenshots</span>
 					</div>
 					<div class="gallery">
-						<img class="modal-image" src="static/img/3_flint/fl_start.png" style="width:33%; height:270px;" alt="Flint start screen">
-						<img class="modal-image" src="static/img/3_flint/fl_story.png" style="width:33%; height:270px;" alt="Flint story screen">
+						<img class="modal-image" src="static/img/3_flint/fl_start.png" style="width:33%;" alt="Flint start screen">
+						<img class="modal-image" src="static/img/3_flint/fl_story.png" style="width:33%;" alt="Flint story screen">
 					</div>
 					<div style="text-align: center">
 						<span id="flint-close-btn" class="close-btn">Close</span>
@@ -392,7 +393,7 @@
 						<span class="project-note">Reaper, Zoom H1, ReaEQ, ReaComp, ReaVocode</span>
 						<p><em>"Beep Boop"</em></p>
 					</div>
-					<div class="project-indent">
+					<div class="modal-indent">
 						<p>
 							What game/genre did you choose? I chose the game Overwatch. Why did you choose it? I chose it because I wanted to experiment with creating robot sounds and I also really enjoyed the Overwatch short itself. How did you approach the sound design? I approached the sound design by making all the nature sounds first. Afterwards, I added in robot sounds and tuned everything up. What technology did you use? I used Reaper for the editing, Zoom H1 for the recording. Also, ReaEQ, ReaComp, ReaVocode - which were all under VST effects. Which sounds were the most challenging? The robot sounds were the most challenging because I had to use tone generators and sound effects from the f(x) section. 
 							Click <a class="small-link" href="https://www.youtube.com/watch?v=oJ1wWqtOJTI" target="_blank"><em>this</em></a> to watch video. Make sure to put on headphones.
@@ -400,7 +401,7 @@
 						<span class="font">Screenshots</span>
 					</div>
 					<div class="gallery">
-						<img class="modal-image" src="static/img/8_foley_overwatch/fps.png" style="width:33%; height:270px;" alt="Overwatch foley">
+						<img class="modal-image" src="static/img/8_foley_overwatch/fps.png" style="width:50%;" alt="Overwatch foley">
 					</div>
 					<div style="text-align: center">
 						<span id="foley-close-btn" class="close-btn">Close</span>
@@ -424,7 +425,7 @@
 						<span class="project-note">heavy, Wwise, and Pure Data</span>
 						<p><em>"Realistic Crickets"</em></p>
 					</div>
-					<div class="project-indent">
+					<div class="modal-indent">
 						<p>
 							As this project was an extension of the 170 series (Shroommates the game, where the three of us had planned to implement this audio work), I decided it was better placed in a demo world where the other conflicting sounds of the world don’t overwhelm and drown out the sounds. All the sounds were implemented in Pure Data, imported into heavy, then configured with Wwise into Unreal Engine 4. 
 						</p>
@@ -439,9 +440,9 @@
 						<span class="font">Screenshots</span>
 					</div>
 					<div class="gallery">
-						<img class="modal-image" src="static/img/9_wwise_heavy_ue4/cricket.png" alt="Pure Data Cricket Patch Screenshot" style="width:33%; height:200px;">
-						<img class="modal-image" src="static/img/9_wwise_heavy_ue4/bg.png" alt="Pure Data Background Sound Patch Screenshot" style="width:33%; height:200px;">
-						<img class="modal-image" src="static/img/9_wwise_heavy_ue4/ee.png" alt="Pure Data Electric Sound Patch Screenshot" style="width:33%; height:200px;">
+						<img class="modal-image" src="static/img/9_wwise_heavy_ue4/cricket.png" alt="Pure Data Cricket Patch Screenshot" style="width:25%;">
+						<img class="modal-image" src="static/img/9_wwise_heavy_ue4/bg.png" alt="Pure Data Background Sound Patch Screenshot" style="width:25%;">
+						<img class="modal-image" src="static/img/9_wwise_heavy_ue4/ee.png" alt="Pure Data Electric Sound Patch Screenshot" style="width:25%;">
 					</div>
 					<div style="text-align: center">
 						<span id="Wwise-close-btn" class="close-btn">Close</span>
@@ -465,16 +466,16 @@
 						<span class="project-note">Phaser.js</span>
 						<p><em>"Time pressure"</em></p>
 					</div>
-					<div class="project-indent">
+					<div class="modal-indent">
 						<p>
 							Small project that served as an introduction to game programming. Requirements included game states and switching, a texture atlas or sprite sheets for in-game images, proper asset loading, player movement(based on you game design), animation, proper collision management, random generation of terrain, pickups, etc, looping background music, sound effects (based on your game design), some form of GUI, proper commenting, and a logical organized file structure. Click <a class="small-link" href="https://github.com/okamiko/okamiko.github.io/tree/master/static/img/10_endless" target="_blank"><em>this</em></a> to view the repo.
 						</p>
 						<span class="font">Screenshots</span>
 					</div>
 					<div class="gallery">
-						<img class="modal-image" src="static/img/10_endless/landing.gif" alt="Space Runner" style="width:33%; height:200px;">
-						<img class="modal-image" src="static/img/10_endless/game.gif" alt="Space Runner" style="width:33%; height:200px;">
-						<img class="modal-image" src="static/img/10_endless/gg.png" alt="Space Runner" style="width:33%; height:200px;">
+						<img class="modal-image" src="static/img/10_endless/landing.gif" alt="Space Runner" style="width:33%;">
+						<img class="modal-image" src="static/img/10_endless/game.gif" alt="Space Runner" style="width:33%;">
+						<img class="modal-image" src="static/img/10_endless/gg.png" alt="Space Runner" style="width:33%;">
 					</div>
 					<div style="text-align: center">
 						<span id="end-close-btn" class="close-btn">Close</span>
@@ -483,12 +484,13 @@
 			</div>
 		</div>
 
-		<div id="resume-actual" class="section-title">
+		<div id="resume" class="anchor"></div>
+		<div class="section-title">
 			<h2>RESUME</h2>
 		</div>
 		<div class="section section-grid">
 			<a class="link-card" href="static/img/resume/hui-jeffrey_resume_cc.pdf" type="application/pdf" target="_blank">
-				<div id="work-resume" class="card">
+				<div class="card">
 					<img class="card-image" src="static/img/maple_2.png" alt="Maplestory">
 					<div class="card-container">
 						<span class="project-title"><strong>Engineering</strong></span>
@@ -499,12 +501,13 @@
 			</a>
 		</div>
 
-		<div id="about-contact-actual" class="section-title">
+		<div id="about-contact" class="anchor"></div>
+		<div class="section-title">
 			<h2>ABOUT/CONTACT</h2>
 		</div>
 		<div class="section">
 			<div style="text-align:center">
-				<img src="static/img/me.jpg" id="me" alt="Jeffrey Hui">
+				<img src="static/img/me.jpg" class="me" alt="Jeffrey Hui">
 			</div>
 			<p>
 				Hello!

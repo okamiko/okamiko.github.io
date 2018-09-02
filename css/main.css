@@ -1,7 +1,15 @@
-#to-top:hover {
-    opacity: 1; /* Hover turn grey */
+html {
+    scroll-behavior: smooth; /* Automatically will apply this effect during scrolling to the anchor links */
 }
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Mont or bust */
+    margin: 0; /* 360 AOE */
+    line-height: 1.75; /* Almost double spaced */
+}
+
 #to-top {
+    opacity: .7; /* Hover effect */
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 16px; /* Place the button at the bottom of the page */
@@ -10,34 +18,22 @@
     border: none; /* Remove borders */
     background: #414A59; /* Background color of top button */
     color: #F5F6F7; /* Literal font color */
-    opacity: .7; /* Hover effect */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 12px; /* Some padding */
     border-radius: 6px; /* Rounded corners */
     font-size: 14px; /* Increase font size */
 }
-#me {
-    padding-top: 30px;
-    width: 40%; /* Picture of me */
-}
 
-html {
-    scroll-behavior: smooth; /* Automatically will apply this effect during scrolling to the anchor links */
-}
-
-body {
-    font-family: 'Montserrat', sans-serif; /* Mont or bust */
-    margin: 0; /* 360 AOE */
-    line-height: 1.75; /* Spacing between font */
+#to-top:hover {
+    opacity: 1; /*.7->1 */
 }
 
 #navbar {
     position: fixed; /* Locked on top */
-    background-color: #303642; /* Dark grey bar */
     width: 100%; /* Fill the whole bar */
     text-align: center; /* Center text */
-    box-shadow: 0 20px 50px rgba(19, 21, 26, 0.3); /* Drop shadow below navbar */
     z-index: 9999; /* Stays above everything else */
+    background-color: #303642; /* Dark grey bar */
 }
 
 .header-name,
@@ -57,16 +53,11 @@ body {
     transition: color 1.5s; /* When hovered, take more time to transition to full solid orange */
 }
 
-.icon {
-    display: none; /* Hide hamburger */
-}
-
 .header-name {
     letter-spacing: 3px; /* Jeffrey C Hui */
-    margin: 0; /* Spacing */
+    margin-top: 0; /* Spacing */
     font-size: 2.0em; /* Tad bigger than nav-links */
     line-height: 1px; /* Spacing */
-    cursor: default; /* When hovered, make sure stays consistent */
 }
 
 span.middle {
@@ -77,11 +68,8 @@ span.last {
     color: #ffd700; /* Hui */
 }
 
-/* Designer & Front End Developer, Projects, Engineering, Resumes, About/Contact */
-.intro,
-.section-title h2 {
-    font-family: Montserrat, sans-serif;
-    text-shadow: 0 0 18px #000;
+.icon {
+    display: none; /* Hide hamburger */
 }
 
 #banner {
@@ -99,41 +87,21 @@ span.last {
 }
 
 .intro {
-    letter-spacing: 1px; /* Same as below for consistency sake */
+    letter-spacing: 1px;
     margin-bottom: .25em;
     line-height: 1.25;
     font-size: 3em;
     color: #ffd700;
     animation: fadein 4s;
-}
-
-@keyframes fadein {
-    from {
-        opacity: 0;
-        letter-spacing: 0;
-    }
-    to {
-        opacity: 1;
-        letter-spacing: 1px; /* Consistency */
-    }
+    text-shadow: 0 0 18px #000;
 }
 
 .pitch {
     width: 500px;
     margin: 0 auto;
-    color: #F5F6F7; /* White color Hi, */
+    color: #F5F6F7; 
     animation: fadein2 4s;
     text-shadow: 0 0 12px #000;
-}
-
-@keyframes fadein2 {
-    0%,
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 .anchor {
@@ -142,12 +110,12 @@ span.last {
 }
 
 .section-title {
-    padding: 1em 3em; /* Thickness of Dividers */
+    padding: 1em 3em; 
     text-align: center;
     background-color: #303642;
 }
 
-.section-title h2 { /* Titles themselves */
+.section-title h2 { 
     margin: 0;
     padding-top: 4px;
     font-size: 2em;
@@ -159,7 +127,6 @@ span.last {
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    padding: 2em 0;
 }
 
 .section-grid {
@@ -169,13 +136,9 @@ span.last {
     grid-gap: 1em; /* LRUD */
 }
 
-.small-link {
-    color: #5294E2;
-    text-decoration: none;
-}
-
-.small-link:hover {
-    text-decoration: underline;
+.me {
+    padding-top: 30px;
+    width: 40%; /* Picture of me */
 }
 
 .footer {
@@ -185,15 +148,54 @@ span.last {
     text-align: center;
 }
 
-a.otherLinks {
-    margin: 2%; /* Spread it out a bit */
-    color: #5294E2;
-    text-decoration: none; /* Underline */
+.footer p {
+    margin-top: 20px; 
+    margin-bottom: 0;
 }
 
-.footer p {
-    margin-top: 20px; /* Copyright */
-    margin-bottom: 0;
+/*GitHub LinkedIn*/
+.otherLinks {
+    margin: 2%; 
+    color: #5294E2;
+    text-decoration: none; 
+}
+
+/* Contact, Classes I've Taken, Screenshot*/
+.font{
+    font-size: 24px;
+}
+
+/* All external links*/
+.small-link {
+    color: #5294E2;
+    text-decoration: none;
+}
+
+.small-link:hover {
+    text-decoration: underline;
+}
+
+.link-card {
+    text-decoration: none;
+    color: #000;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein2 {
+    0%,
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width:1280px) {

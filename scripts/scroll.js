@@ -32,7 +32,6 @@ function closeMenu() {
     header.classList.remove("responsive")
 }
 
-
 // Small screen hamburger
 var header = document.getElementById("navbar"),
     sticky = header.offsetTop;
