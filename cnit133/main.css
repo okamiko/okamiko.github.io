@@ -24,3 +24,14 @@ ul{
 a{
 	color: inherit; /*inherit from parent which is li*/
 }
+
+nav{
+	font-weight: bold;
+	text-align:center;
+	padding-top:50px;
+	color: white;
+}
+
+.white{
+	color:white;
+}
