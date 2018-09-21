@@ -1,0 +1,89 @@
+body{background-color: yellow;}
+a:link{color: red;} /*default red*/
+a:visited{color: white;} /*visited white*/
+
+h1{
+	color: red;
+	text-align: center;
+	margin-top: 0;
+}
+
+.firstletter{
+	font-size: 3em;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.red{color: red;}
+
+h2{
+	text-align: right;
+	color: blue;
+	font-style: italic;
+}
+
+.fontsize{font-size: 2em;}
+
+h3{
+	text-align: right;
+	color: red;
+}
+
+table{
+    border-spacing: 5px;
+    border-collapse: separate;
+}
+
+td{padding: 10px;}
+
+.firstrow{
+ 	text-align: center;
+	font-weight: bold;
+}
+
+@keyframes myfirst
+{
+from {
+	background: cyan;
+	color: black;
+	}
+
+to {
+	background: green;
+	color: white;
+	}
+}
+
+/* Firefox */
+@-moz-keyframes myfirst 
+{
+from {
+	background: cyan;
+	color: black;
+	}
+
+to {
+	background: green;
+	color: white;
+	}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes myfirst 
+{
+from {
+	background: cyan;
+	color: black;
+	}
+
+to {
+	background: green;
+	color: white;
+	}
+}
+
+#header{
+-moz-animation: myfirst 7s; /* Firefox */
+-webkit-animation: myfirst 7s; /* Safari and Chrome */
+animation-fill-mode: forwards;
+} 
