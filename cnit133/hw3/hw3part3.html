@@ -9,16 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="../main.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
  <style>
-	h2{
-		color:yellow;
-	}
-	table,td,th{
-		border: 4px solid white;
-		border-collapse: collapse;
-		padding: 20px 20px 20px 20px;
-		color:white;
-		margin-bottom:20px;
-	}
+	h2{color:yellow;}
 	.btn{
 		background-color: black;
 		border: none;
@@ -30,7 +21,7 @@
 		font-size: 16px;
 		margin-top:15px;
 		margin-bottom:15px;
-}
+	}
 </style>
 </head>
 <body>
@@ -41,15 +32,10 @@
 	<a href="hw3.html">Cover page</a> 
 </nav>
 <h1 class="header"> CNIT 133 Homework 3 - Part 3 (Temperature conversion)</h1>
-
 <h2>Temperature Converter</h2>
 	<form>
-		<table>
-			<tr>
-				<td>Temperature:</td>
-				<td><input type="number" id="temperatureNumber" autofocus></td>
-			</tr>
-		</table>
+		<div class="white">Temperature:</div>
+		<input type="number" id="temperatureNumber" autofocus>
 		<div class="white" id="NaN"></div>
 		<input class="btn" type="button" onclick="toCelsius()" value="Convert to C from F">
 		<input class="btn" type="button" onclick="toFahrenheit()" value="Convert to F from C">

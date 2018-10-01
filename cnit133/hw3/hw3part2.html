@@ -44,65 +44,58 @@ table,td,th{
 	<a href="hw3.html">Cover page</a> 
 </nav>
 <h1 class="header"> CNIT 133 Homework 3 - Part 2 (Salespeople commission basis)</h1>
-
-<div>
-	<label class="white" for="salesperson">Salesperson's Name</label>
+<form>
+	<label class="white" for="salesperson">Salesperson's Name:</label>
 	<input id="salesperson" title="Please make sure that the salesperson's name is spelled correctly" autofocus>
-	<form>
-		<h2 class="white">Input the number of items sold:</h2>
-
-		<span class="white">Item 1:</span><input type="number" min="0" id="itemOne"><br>
-		<span class="white">Item 2:</span><input type="number" min="0" id="itemTwo"><br>
-		<span class="white">Item 3:</span><input type="number" min="0" id="itemThree"><br>
-		<span class="white">Item 4:</span><input type="number" min="0" id="itemFour"><br>
-
-		<input class="btn" type="button" value="submit" onclick="mesos()">
-		
-		<!-- Negative Inputs-->
-		<div class="big" id="negativeNumber"></div>
-
-		<table>
-			<tr>
-				<th>Item #</th>
-				<th>Price</th>
-				<th>Number Sold</th>
-				<th>Total</th>
-			</tr>
-			<tr>
-				<td>1</td>
-				<td>$239.99</td>
-				<td><input id="item_1_sold"></td>
-				<td><input id="item_1_total"></td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>$129.75</td>
-				<td><input id="item_2_sold"></td>
-				<td><input id="item_2_total"></td>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>$99.95</td>
-				<td><input id="item_3_sold"></td>
-				<td><input id="item_3_total"></td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>$350.89</td>
-				<td><input id="item_4_sold"></td>
-				<td><input id="item_4_total"></td>
-			</tr>
-			<tr>
-				<td colspan="3">Total Amount Sold:</td>
-				<td><input id="item_total"></td>
-			</tr>
-			<tr>
-				<td colspan="3">Total Weekly Earnings:</td>
-				<td><input id="base_salary"></td>
-			</tr>
-		</table>
-	</form>	
-</div>
+	<h2 class="white">Input the number of items sold:</h2>
+	<span class="white">Item 1:</span><input type="number" min="0" id="itemOne"><br>
+	<span class="white">Item 2:</span><input type="number" min="0" id="itemTwo"><br>
+	<span class="white">Item 3:</span><input type="number" min="0" id="itemThree"><br>
+	<span class="white">Item 4:</span><input type="number" min="0" id="itemFour"><br>
+	<input class="btn" type="button" value="submit" onclick="main()">
+	<!-- Negative Inputs-->
+	<div class="big" id="negativeNumber"></div>
+	<table>
+		<tr>
+			<th>Item #</th>
+			<th>Price</th>
+			<th>Number Sold</th>
+			<th>Total</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>$239.99</td>
+			<td><input id="item_1_sold"></td>
+			<td><input id="item_1_total"></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>$129.75</td>
+			<td><input id="item_2_sold"></td>
+			<td><input id="item_2_total"></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>$99.95</td>
+			<td><input id="item_3_sold"></td>
+			<td><input id="item_3_total"></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>$350.89</td>
+			<td><input id="item_4_sold"></td>
+			<td><input id="item_4_total"></td>
+		</tr>
+		<tr>
+			<td colspan="3">Total Amount Sold:</td>
+			<td><input id="item_total"></td>
+		</tr>
+		<tr>
+			<td colspan="3">Total Weekly Earnings:</td>
+			<td><input id="base_salary"></td>
+		</tr>
+	</table>
+</form>	
 <script src="js/hw3part2.js"></script>
 </body>
 </html>
