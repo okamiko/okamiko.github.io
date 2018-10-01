@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Homework 3 - CNIT 133 Homework Page</title>
+	<meta charset="UTF-8">
+  	<meta name="description" content="Homework 3">
+  	<meta name="author" content="Jeffrey Hui">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="stylesheet" type="text/css" href="../main.css">
+  	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<style>
+	table,td,th{
+		border-collapse: collapse;
+		border: 4px solid white;
+		padding: 20px 20px 20px 20px;
+		color: white;
+		margin-bottom:20px;
+	}
+	#content{
+		display: none;
+		padding: 25px;
+		color: white;
+	}
+	#toggle{
+		background-color: black;
+    	border: none;
+    	color: white;
+    	padding: 15px 32px;
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+   		font-size: 16px;
+	}
+	form{
+		color:white;
+	}
+</style>
+</head>
+<body>
+<nav>
+	<a href="hw3part2.html"> Part 2</a> -
+	<a href="hw3part3.html"> Part 3</a> -
+	<a href="hw3part4.html"> Part 4</a> -
+	<a href="hw3.html">Cover page</a>
+</nav>
+<h1 class="header">CNIT 133 Homework 3 - Part 1 (Student Grades)</h1>
+<h2 class="white">Please Enter Your Grade For Each Section</h2>
+<div>
+    <div id="toggle">Click to Show/Hide Instructions</div><br>
+	<div id="content">The following webpage contains the heading, Student Grades, and uses a script that inputs a student's homework average, mid-term exam score, final exam score, and ACR (all as integers)</div><br>
+	<form>
+	<!-- Obtain the input from the table as a string. -->
+		<table>
+			<tr>
+				<td>Type of Grade</td>
+				<td>Weight</td>
+				<td>Input below</td>
+			</tr>
+			<tr>
+			    <td>hwAvg</td>
+			    <td>50%</td>
+				<td><input type="number" min="0" max="100" id="hwAvg" autofocus></td>
+			</tr>
+			<tr>
+			    <td>midExam</td>
+			    <td>20%</td>
+				<td><input type="number" min="0" max="100" id="midExam"></td>
+			</tr>
+			<tr>
+			    <td>finalExam</td>
+			    <td>20%</td>
+				<td><input type="number" min="0" max="100" id="finalExam"></td>
+			</tr>
+			<tr>
+			    <td>ACR</td>
+			    <td>10%</td>
+				<td><input type="number" min="0" max="100" id="ACR"></td>
+			</tr>
+		</table> 
+		<input type="button" onclick="calculateGrade()" value="Calculate my Grade!"> <!--Button-->
+		<div id="finalAvg"></div> <!--Print letter grade statement-->
+   </form>   
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/hw3part1.js"></script>
+</body>
+</html>

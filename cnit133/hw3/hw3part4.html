@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Homework 3 - CNIT 133 Homework Page</title>
+	<meta charset="UTF-8">
+  	<meta name="description" content="Homework 3">
+  	<meta name="author" content="Jeffrey Hui">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="stylesheet" type="text/css" href="../main.css">
+  	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<style> 
+	table,td,th{
+		border: 4px solid white;
+		border-collapse: collapse;
+		padding: 20px 20px 20px 20px;
+		color:white;
+		margin-bottom:20px;
+	}
+	.btn{
+		background-color: black;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin-top:15px;
+		margin-bottom:15px;
+	}
+</style>
+</head>
+<body onload="randomNums()">
+<nav>
+	<a href="hw3part1.html"> Part 1</a> -
+	<a href="hw3part2.html"> Part 2</a> -
+	<a href="hw3part3.html"> Part 3</a> -
+	<a href="hw3.html">Cover page</a> 
+</nav>
+<h1 class="header"> CNIT 133 Homework 3 - Part 4 (Help elementary school students learn multiplication)</h1>
+<h2 class="white"> Learn Multiplication</h2>
+<form>
+	<table>
+		<tr>
+			<td>Number 1:</td>
+			<td><input type="number" id="numberOne" readonly></td>
+		</tr>
+		<tr>
+			<td>Number 2:</td>
+			<td><input type="number" id="numberTwo" readonly></td>
+		</tr>
+		<tr>
+			<td>Guess:</td>
+			<td><input type="number" id="numberThree" autofocus></td>
+		</tr>
+	</table>
+	<div class="white" id="NaN"></div>
+	<input class="btn" type="button" onclick="mult()" value="Did I Get It Right?">
+	<div class="white" id="outcome"></div><br>
+</form>	
+<script src="js/hw3part4.js"></script>
+</body>
+</html>
