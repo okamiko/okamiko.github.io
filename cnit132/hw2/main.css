@@ -54,36 +54,8 @@ to {
 	}
 }
 
-/* Firefox */
-@-moz-keyframes myfirst 
-{
-from {
-	background: cyan;
-	color: black;
-	}
-
-to {
-	background: green;
-	color: white;
-	}
-}
-
-/* Safari and Chrome */
-@-webkit-keyframes myfirst 
-{
-from {
-	background: cyan;
-	color: black;
-	}
-
-to {
-	background: green;
-	color: white;
-	}
-}
-
 #header{
--moz-animation: myfirst 7s; /* Firefox */
--webkit-animation: myfirst 7s; /* Safari and Chrome */
-animation-fill-mode: forwards;
+	animation-name: myfirst;
+	animation-duration: 7s;
+	animation-fill-mode:  forwards;
 } 
