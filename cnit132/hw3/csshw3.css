@@ -37,6 +37,10 @@ tr:nth-child(even){
 	background-color: #999999;
 }
 
+li{
+	list-style-image: url('trillium.gif');
+}
+
 .first-p{
 	font-size: 20px;
 	text-align: center;
