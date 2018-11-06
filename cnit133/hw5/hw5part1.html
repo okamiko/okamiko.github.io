@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Homework 5 - CNIT 133 Homework Page</title>
+	<meta charset="UTF-8">
+  	<meta name="description" content="Homework 5">
+  	<meta name="author" content="Jeffrey Hui">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="stylesheet" type="text/css" href="../main.css">
+  	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<style>
+  .white{
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
+  }
+  span{color: white;}
+  .space{margin-bottom: 30px;}
+  .paddingbtn{
+    margin-top: 30px;
+    padding: 25px 50px;
+  }
+  .message{display: none;}
+  .red{color: red;} 
+</style>
+</head>
+<body>
+    <nav>
+    	<a href="hw5.html"> Cover Page</a> -
+    	<a href="hw5part2.html"> Part 2</a> -
+        <a href="hw5part3.html"> Part 3</a> 
+    </nav>
+    <h1 class="header">CNIT 133 Homework 5 - Part 1(Form Validation)</h1>
+    <div class="white">Validate form elements</div>
+    <div class="white"><p>This form contains an input text box, radio buttons, checkboxes, and a select element.</p></div>
+
+    <form action="redirect.html" method="post" id="myform" name="myform">
+        <table class="white">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" id="name" size="30" class="required" autofocus></td>
+            </tr>
+
+            <tr>
+                <td>Favorite Game:</td>
+                <td>Overwatch<input type="radio" id="game1" name="game" class="required" value="Overwatch">
+                League of Legends<input type="radio" id="game2" name="game" value="League of Legends" ></td>
+            </tr>
+
+            <tr>
+                <td>Favorite Drink:</td>
+                <td>Milk Tea<input type="checkbox" id="team1" name="team" value="Milk Tea" class="required">
+                Coffee<input type="checkbox" id="team2" name="team" value="Coffee" >
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="occ" class="label">Career Goals:</label>
+                </td>
+                <td>
+                    <select name="occ" id="occ" class="required">
+                    <option value="">-Choose one-</option>
+                    <option value="student">Front End Engineer</option>
+                    <option value="teacher">JavaScript Developer</option>
+                    <option value="programmer">UI Developer</option>
+                    <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>            
+               <td><input type="submit" id="submit_button" value="SUBMIT"></td>
+               <td><input type="reset" value="RESET" onclick="window.location.reload();"></td>
+            </tr>
+        </table>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+    <script src="js/hw5part1.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Homework 5 - CNIT 133 Homework Page</title>
+	<meta charset="UTF-8">
+  	<meta name="description" content="Homework 5">
+  	<meta name="author" content="Jeffrey Hui">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="stylesheet" type="text/css" href="../main.css">
+  	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<style>
+</style>
+</head>
+<body>
+<nav>
+	<a href="hw5.html"> Cover Page</a> -
+  <a href="hw5part1.html"> Part 1</a> -
+  <a href="hw5part3.html"> Part 3</a> 
+</nav>
+<h1 class="header">CNIT 133 Homework 5 - Part 2 (Pulldown Menus)</h1>
+
+<form class="white">
+  <h3>Choose your destination using onChange event handler</h3>
+  <select name="destinationList" onChange="goToNewPage(this.form);">
+    <option>Choose Destination:</option>
+    <option value="http://www.bing.com/">Bing</option>
+    <option value="http://www.twitch.tv/">Twitch</option>
+    <option value="http://www.youtube.com/">Youtube</option>
+    <option value="http://www.linkedin.com">LinkedIn</option>
+  </select>
+</form>
+
+<br><br>
+
+<form class="white">
+  <h3>Choose your destination using onClick event handler</h3>
+  <select name="destinationList">
+    <option value="http://www.google.com/">Google</option>
+    <option value="http://www.nexon.net/">Nexon</option>
+    <option value="http://www.discord.com/">Discord</option>
+    <option value="http://www.facebook.com">Facebook</option>
+  </select>
+  <input type="button" value="Go" onClick="goToNewPage(this.form);">
+</form>
+
+<script src="js/hw5part2.js"></script>
+</body>
+</html>

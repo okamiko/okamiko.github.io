@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Homework 5 - CNIT 133 Homework Page</title>
+	<meta charset="UTF-8">
+  	<meta name="description" content="Homework 5">
+  	<meta name="author" content="Jeffrey Hui">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="stylesheet" type="text/css" href="../main.css">
+  	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<style></style>
+</head>
+<body>
+<nav>
+	<a href="hw5.html"> Cover Page</a> -
+  <a href="hw5part1.html"> Part 1</a> -
+  <a href="hw5part2.html"> Part 2</a> 
+</nav>
+<h1 class="header">CNIT 133 Homework 5 - Part 3 (State 2010 Census)</h1>
+<h2 class="white">State 2010 census</h2>
+<table class="white">
+  <tr>
+    <th>State Abbr</th>
+    <th>State Name</th> 
+    <th>Capital</th>
+    <th>Population</th>
+  </tr>
+  <tr>
+    <td>AL</td> 
+    <td>Alabama</td>  
+    <td>Montgomery</td>   
+    <td>4,779,736</td> 
+  </tr>
+  <tr>
+    <td>AK</td> 
+    <td>Alaska</td> 
+    <td>Juneau</td>   
+    <td>710,231</td>
+  </tr>
+  <tr>
+    <td>AZ</td>  
+    <td>Arizona</td>  
+    <td>Phoenix</td>    
+    <td>6,392,017</td>  
+  </tr>
+  <tr>
+    <td>AR</td> 
+    <td>Arkansas</td> 
+    <td>Little Rock</td>    
+    <td>2,915,918</td>  
+  </tr>
+  <tr>
+    <td>CA</td> 
+    <td>California</td> 
+    <td>Sacramento</td>   
+    <td>37,253,956</td> 
+  </tr>
+  <tr>
+    <td>CO</td> 
+    <td>Colorado</td> 
+    <td>Denver</td>   
+    <td>5,029,196</td>  
+  </tr>
+</table>
+<br>
+
+<form name="SearchForm">
+  <input type="text" size="15" name="inputStateVal" autofocus> 
+  <input onclick="ButtonPressed();" type="button" value="State Info" name="search" id="search">
+    <table class="main white">
+      <tr>
+        <td>State Name:</td>
+        <td><input type="text" size="15" id="name"></td>
+      </tr> 
+
+      <tr>
+        <td>State Capital:</td>
+        <td><input type="text" size="15" id="capital"></td>
+      </tr> 
+
+      <tr>
+        <td>State Population:</td>
+        <td><input type="text" size="15" id="population"></td>
+      </tr> 
+    <table>
+  <input type="reset" value="Reset" onclick="location.reload();">
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="js/hw5part3.js"></script>
+</body>
+</html>
