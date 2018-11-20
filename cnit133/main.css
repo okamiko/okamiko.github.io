@@ -35,3 +35,8 @@ nav{
 .white{
 	color:white;
 }
+
+#errOut{
+	color: red; 
+	font-size:20px;
+}

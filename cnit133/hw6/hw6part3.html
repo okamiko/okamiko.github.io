@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Homework 6 - CNIT 133 Homework Page</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Homework 6">
+	<meta name="author" content="Jeffrey Hui">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../main.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<style>.big{font-size:20px; font-weight: bold;}</style>
+</head>
+<body>
+<nav>
+	<a href="hw6.html"> Cover Page</a> -
+  <a href="hw6part1.html"> Part 1</a> -
+  <a href="hw6part2.html"> Part 2</a> 
+</nav>
+<h1 class="header">CNIT 133 Homework 6 - Objects</h1>
+  <section class="white">
+    <h3>Timezone and Split Number</h3>
+    <p class="big">Today's Date is:</p>
+    <script>
+      var currDate = new Date();
+      document.writeln( "toString() method: "                      + currDate.toString() + 
+                "<br> toLocaleString() method : "                  + currDate.toLocaleString() +
+                "<br> toUTCString() method : "                     + currDate.toUTCString() +
+                "<br> Difference in hrs between PST/PDT and UTC: " + currDate.getTimezoneOffset() / 60 +
+                "<br> Difference in hrs between EST and UTC: "     + ((currDate.getTimezoneOffset() / 60) - 3) +
+                "<br> Difference in hrs between EDT and UTC: "     + ((currDate.getTimezoneOffset() / 60) - 2));
+    </script>
+    <br><br><br> 
+    <form id="split_num">
+      Enter a Phone Number [in the form (666) 666-6666]
+      <input id="phone" type="text" size="20">
+      <input type="button" value="split the number" onclick="splitNum()"><br><br>
+      
+      Area Code:  
+      <input id="area" type="text" size="4" readonly><br><br>
+
+      First Three Digits: 
+      <input id="first3" type="text" size="4" readonly><br><br>
+
+      Last Four Digits:   
+      <input id="last4" type="text" size="10" readonly><br><br>
+ 
+      Full Number:
+      <input id="full" type="text" size="13"><br><br>
+
+      Reset:
+      <input type="reset" value="reset here" onClick="window.location.reload();"> 
+    </form>
+  </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://rawgit.com/digitalBush/jquery.maskedinput/1.4.1/dist/jquery.maskedinput.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+<script src="js/hw6part3.js"></script>
+</body>
+</html>
