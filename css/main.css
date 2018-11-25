@@ -224,7 +224,7 @@ span.last {
         margin: 0
     }
     .section-grid {
-        grid-template-columns: repeat(auto-fit, 100%)
+        /*grid-template-columns: repeat(auto-fit, 100%)*/
     }
     .section-title {
         padding: 0
