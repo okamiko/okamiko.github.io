@@ -40,3 +40,19 @@ nav{
 	color: red; 
 	font-size:20px;
 }
+
+.black{color: black;}
+
+.background-color_pink{background-color: pink;}
+.background-color_gray{background-color: #A9A9A9;}
+.background-color_almond{background-color:#FFEBCD;}
+.font-size_small{font-size: 10px;}
+.font-size_medium{font-size: 18px;}
+.font-size_big{font-size: 25px;}
+.font-family_arial {font-family: "Arial", sans-serif;}
+.font-family_courier {font-family: "Courier", monospace;}
+.font-family_normal {font-family: 'Lato', sans-serif;}
+.font-style_italic {font-style: italic;}
+.font-style_normal {font-style: normal;}
+.font-weight{font-weight: bold;}
+.font-weight_light{font-weight: 100;}
