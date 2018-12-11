@@ -9,30 +9,77 @@
 	<link rel="stylesheet" type="text/css" href="../main.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
+<style>
+
+ul li{list-style-type: none;}
+
+.show{
+	display: none;
+	padding-left: 0px;
+	font-size: 18px;
+}
+
+.flex{display: inline-flex;}
+
+li a{display: block;}
+</style>
 <body>
 <nav>
 	<a href="hw7.html"> Cover Page</a> -
  	<a href="hw7part1.html"> Part 1</a> -
  	<a href="hw7part3.html"> Part 3</a> 
 </nav>
-<h1 class="header">CNIT 133 Homework 7 -  Object Model and Miscellaneous jQuery</h1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<h1 class="header">CNIT 133 Homework 7 -  mouseover</h1>
+<div class="flex">
+	<ul class="list">
+		<li><a href="../index.html">HW1</a></li>
+	</ul>
+	<ul class="list" onmouseover="showList('hw2');" onmouseleave="hideList('hw2');">
+		<li>HW2</li>
+		<li class="show" id="hw2">
+			<a href="../hw2/hw2.html">Home Page</a>
+			<a href="../hw2/hw2part2.html">Part 2</a>
+			<a href="../hw2/hw2part3.html">Part 3</a>
+			<a href="../hw2/hw2part4.html">Part 4</a>
+		</li>
+	</ul>
+	<ul class="list" onmouseover="showList('hw3');" onmouseleave="hideList('hw3');">
+		<li>HW3</li>
+		<li class="show" id="hw3">
+			<a href="../hw3/hw3.html">Home Page</a>
+			<a href="../hw3/hw3part1.html">Part 1</a>
+			<a href="../hw3/hw3part2.html">Part 2</a>
+			<a href="../hw3/hw3part3.html">Part 3</a>
+			<a href="../hw3/hw3part4.html">Part 4</a>
+		</li>
+	</ul>
+	<ul class="list" onmouseover="showList('hw4');" onmouseleave="hideList('hw4');">
+		<li>HW4</li>
+		<li class="show" id="hw4">
+			<a href="../hw4/hw4.html">Home Page</a>
+			<a href="../hw4/hw4part1.html">Part 2</a>
+			<a href="../hw4/hw4part2.html">Part 3</a>
+		</li>
+	</ul>
+	<ul class="list" onmouseover="showList('hw5');" onmouseleave="hideList('hw5');">
+		<li>HW5</li>
+		<li class="show" id="hw5">
+			<a href="../hw5/hw5.html">Home Page</a>
+			<a href="../hw5/hw5part1.html">Part 1</a>
+			<a href="../hw5/hw5part2.html">Part 2</a>
+			<a href="../hw5/hw5part3.html">Part 3</a>
+		</li>
+	</ul>
+	<ul class="list" onmouseover="showList('hw6');" onmouseleave="hideList('hw6');">
+		<li>HW6</li>
+		<li class="show" id="hw6">
+			<a href="../hw6/hw6.html">Home Page</a>
+			<a href="../hw6/hw6part1.html">Part 1</a>
+			<a href="../hw6/hw6part2.html">Part 2</a>
+			<a href="../hw6/hw6part3.html">Part 3</a>
+		</li>
+	</ul>
+</div>
 <script src="js/hw7part2.js"></script>
 </body>
 </html>
