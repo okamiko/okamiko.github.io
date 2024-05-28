@@ -3,7 +3,7 @@
 <head>
 	<title>Jeffrey Hui</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="I am passionate about learning the latest technologies whether that’s the front-end or back-end. I am currently open to opportunities within the Cloud Infrastructure / Platform Engineering discipline and I'd love to hear from you!">
+	<meta name="description" content="My name is Jeffrey and I am passionate about optimizing cloud costs and maximizing financial efficiency in cloud operations. I am currently open to opportunities within the Cloud FinOps discipline and I'd love to hear from you!">
 	<meta name="author" content="Jeffrey Hui">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index, follow">
@@ -19,8 +19,8 @@
 		<button onclick="toTop()" id="to-top">Go Top</button>
 	</div>
 	<div id="navbar">
-		<a class="nav-links" href="#engineering-projects" onclick="closeMenu()">ENGINEERING PROJECTS</a>
-		<a class="nav-links" href="#game-projects" onclick="closeMenu()">GAME PROJECTS</a>
+		<a class="nav-links" href="#cloud-projects" onclick="closeMenu()">CLOUD PROJECTS</a>
+		<a class="nav-links" href="#school-projects" onclick="closeMenu()">SCHOOL PROJECTS</a>
 		<h1 class="header-name">JEFFREY<span class="middle">C</span><span class="last">HUI</span></h1>
 		<a class="nav-links" href="#resume" onclick="closeMenu()">RESUME</a>
 		<a class="nav-links" href="#about-contact" onclick="closeMenu()">ABOUT/CONTACT</a>
@@ -31,178 +31,53 @@
 			Hello!
 		</div>
 		<p class="pitch">
-			My name is Jeffrey and I am passionate in the DevOps field. I am currently open to opportunities within the Cloud Infrastructure / Platform Engineering discipline and I'd love to hear from you!
+			My name is Jeffrey and I am passionate about optimizing cloud costs and maximizing financial efficiency in cloud operations. I am currently open to opportunities within the Cloud FinOps discipline and I'd love to hear from you!
 		</p>
 	</div>
 
 	<div onclick="closeMenu()"> 
-
-		<div id="engineering-projects" class="anchor"></div>
+		<div id="cloud-projects" class="anchor"></div>
 		<div class="section-title">
-			<h2>ENGINEERING PROJECTS</h2>
+			<h2>CLOUD PROJECTS</h2>
 		</div>
-
 		<div class="section section-grid">
-
-			<div id="subscriptionsplitter" class="card" onclick="openModal(this)">
-				<img class="card-image" src="static/img/4_subscription_splitter/subscription_splitter.png" alt="Subscription Splitter">
+			<!-- Beanstalk -->
+			<div id="beanstalk" class="card" onclick="openModal(this)">
+				<img class="card-image" src="static/img/11_beanstalk/aws_beanstalk.png" alt="beanstalk deployment">
 				<div class="card-container">
-					<span class="project-title"><strong>Subscription Splitter</strong></span>
-					<p class="project-note">&mdash; MongoDB Express.js Node.js</p>
-					<p><em>"Can I join your group?"</em></p>
+					<span class="project-title"><strong>Beanstalk</strong></span>
+					<p class="project-note">&mdash; AWS</p>
+					<p><em>"Managed services are the way to provision resources in the cloud "</em></p>
 				</div>
 			</div>
-			<div id="subscriptionsplitter-modal" class="modal">
+			<div id="beanstalk-modal" class="modal">
 				<div class="modal-content">
-					<span id="subscriptionsplitter-close" class="close">&times;</span>
+					<span id="beanstalk-close" class="close">&times;</span>
 					<div>
-						<span class="project-title"><strong>Subscription Splitter |</strong></span>
-						<span class="project-note">Used MongoDB Express.js Node.js</span>
-						<p><em>"Can I join your group?"</em></p>
+						<span class="project-title"><strong>beanstalk |</strong></span>
+						<span class="project-note">Made with AWS (Platform Engineer / Cloud Engineer / DevOps Engineer)</span>
+						<p><em>"Beanstalk!"</em></p>
 					</div>
 					<div class="modal-indent">
-						<p>
-							Subscription Splitter is a web application that aims to serve as a platform so anyone can find people to split the cost of a variety of services such as Netflix, Chegg, HBO, or Hulu. Users must create an account before they are able to make a post. The app allows users to leave comments to let people contact each other.
-							Check out the website <a class="small-link" href="https://calm-badlands-13726.herokuapp.com" target="_blank">here</a>.
-						</p>
-						<ul class="subscription-specific">
-							<li>What we accomplished:
-								<ul>
-									<li>Used MongoDB to set up models for Schemas and associated the data using either embedded or referenced methods for one to one relationship, one to many, or many to many relationships. An example would be the comment Schema which defined the model of a comment to have the author and description of the comment. Later, we had to associate comments by exporting it as a model to the group Schema and displaying it on the show route. Finally, after authentication was done, comments were then associated with users when the user signed up and then signed in to add comments</li>
-									<li>Used environment variables so that production and development databases are unique. Database served on mlab and site hosted on Heroku became the production data, while locally we had a separate MongoDB database for testing purposes on AWS Cloud9</li>
-									<li>Used RESTful Routes and mapped HTTP routes and CRUD using Express.js</li>
-									<li>Used Node.js and packages such as body-parser, connect-flash, ejs, express, method-override, mongoose, and passport</li>
-									<li>Used Bootstrap styling methods and its grid system</li>
-									<li>For our project management method, we followed the SCRUM methodology and had weekly standups and burndown charts. Familiarized ourselves with Trello and organized our Sprints there</li>
-								</ul>
-							</li>
-						</ul>
-						<span class="font">Screenshots</span>
-					</div>
-					<div class="gallery">
-						<img class="modal-image" src="static/img/4_subscription_splitter/subscription_splitter.png" alt="Subscription Splitter" style="width:33%; height:33%;">
-					</div>
-					<div style="text-align:center;">
-						<span id="subscriptionsplitter-close-btn" class="close-btn">Close</span>
-					</div>
-				</div>
-			</div>
-
-			<div id="classroom" class="card" onclick="openModal(this)">
-				<img class="card-image" src="static/img/5_c++/classroom.png" alt="Classroom">
-				<div class="card-container">
-					<span class="project-title"><strong>Classroom Manager</strong></span>
-					<p class="project-note">&mdash; C++</p>
-					<p><em>"Who overslept"</em></p>
-				</div>
-			</div>
-			<div id="classroom-modal" class="modal">
-				<div class="modal-content">
-					<span id="classroom-close" class="close">&times;</span>
-					<div>
-						<span class="project-title"><strong>Classroom Manager |</strong></span>
-						<span class="project-note">C++</span>
-						<p><em>"First program in C++"</em></p>
-					</div>
-					<div class="modal-indent">
-						<p>
-							Consider you have an embedded application to be deployed on a set of card readers for a classroom seats management and attendance system. An institute deploys this application on a set of 8 classrooms, with each classroom having 256 available seats. Seats are pre-assigned to students, where by the same seat will be occupied by the same student in all classrooms; i.e. no two students can have the same seat number ever. The seat number of the student will be hardwired on his card. Each student will stamp upon entering and upon leaving a specific class. A student cannot exist in two classes at any point in time. The whole idea is to be able to know how many students are there in any particular class, inquire about a specific student location in any class at any point of time, and to be able also to inquire on the availability of a specific student at any point in time. The maximum number of students that can go to any class is 256, and students are numbered from 0 to 255.
-							Check out the repo <a class="small-link" href="https://github.com/okamiko/okamiko.github.io/tree/master/static/img/5_c%2B%2B" target="_blank">here</a>.
+						<p class="beanstalk-specific">
+							Deployed a Node App and a Python Flask App for developers via AWS Beanstalk with GitHub Actions
 						</p>
 						<span class="font">Screenshots</span>
 					</div>
 					<div class="gallery">
-						<img class="modal-image" src="static/img/5_c++/classroom.png" alt="Classroom" style="width:33%; height:33%;">
+						<img class="modal-image" src="static/img/11_beanstalk/bd_1.png" style="width:33%;" alt="Shroommates living room">
+						<img class="modal-image" src="static/img/11_beanstalk/bd_2.png" style="width:33%;" alt="Shroommates bedroom">
 					</div>
 					<div style="text-align: center">
-						<span id="classroom-close-btn" class="close-btn">Close</span>
-					</div>
-				</div>
-			</div>
-
-			<div id="browsergraphics" class="card" onclick="openModal(this)">
-				<img class="card-image" src="static/img/6_browser_graphics/assets/img/aran.png" alt="Aran">
-				<div class="card-container">
-					<span class="project-title"><strong>Browser Graphics</strong></span>
-					<p class="project-note">&mdash;p5.js</p>
-					<p><em>"Maplestory!"</em></p>
-				</div>
-			</div>
-			<div id="browsergraphics-modal" class="modal">
-				<div class="modal-content">
-					<span id="browsergraphics-close" class="close">&times;</span>
-					<div>
-						<span class="project-title"><strong>Browser Graphics |</strong></span>
-						<span class="project-note">p5.js</span>
-						<p><em>"Generativity"</em></p>
-					</div>
-					<div class="modal-indent">
-						<p>
-							In this programming assignment, you’ll create a program that generativity and interactively reinterprets an image of your own selection. Practice goals: Start a local web server. Edit and debug JavaScript in the Chrome browser’s development tools. Use P5js to read from and draw on images. Start thinking about generativity. Click <a class="small-link" href="https://github.com/okamiko/okamiko.github.io/tree/master/static/img/6_browser_graphics" target="_blank">this</a> to view the repo.
-						</p>
-						<span class="font">Screenshots</span>
-					</div>
-					<div class="gallery">
-						<img class="modal-image" src="static/img/6_browser_graphics/assets/img/aran.gif" style="width:33%; height:33%;" alt="Aran gif">
-						<img class="modal-image" src="static/img/6_browser_graphics/assets/img/aran.png" style="width:33%; height:33%;" alt="Aran png">
-						<img class="modal-image" src="static/img/6_browser_graphics/assets/img/aran.jpg" style="width:33%; height:33%;" alt="Aran jpg">					
-					</div>
-					<div style="text-align: center">
-						<span id="browsergraphics-close-btn" class="close-btn">Close</span>
-					</div>
-				</div>
-			</div>
-
-			<div id="hashlandscapes" class="card" onclick="openModal(this)">
-				<img class="card-image" src="static/img/7_hash_landscapes/assets/landing.png" alt="Floating Boats">
-				<div class="card-container">
-					<span class="project-title"><strong>Hash Landscapes</strong></span>
-					<p class="project-note">&mdash;p5.js, Perlin Noise, Hash Trees</p>
-					<p><em>"Dolphins, boats, and waves!"</em></p>
-				</div>
-			</div>
-			<div id="hashlandscapes-modal" class="modal">
-				<div class="modal-content">
-					<span id="hashlandscapes-close" class="close">&times;</span>
-					<div>
-						<span class="project-title"><strong>Hash Landscapes |</strong></span>
-						<span class="project-note">p5.js, Perlin Noise, Hash Trees</span>
-						<p><em>"Pseudo-infinite, pseudo-random"</em></p>
-					</div>
-					<div class="modal-indent">
-						<p>
-							In this programming assignment, you’ll create a pseudo-infinite, pseudo-random terrain design exploiting the idea of hash trees. Every minute detail of your world should be uniquely determined by a user-provided worldgen key. Practice goals: Use noise functions to create smooth variations. Use hash trees to make repeatable random choices. Derive both continuous and discrete choices from the discrete state of the hash. Click <a class="small-link" href="https://github.com/okamiko/okamiko.github.io/tree/master/static/img/7_hash_landscapes" target="_blank">this</a> to view the repo.
-						</p>
-						<ul>
-							<li>Implemented functionalities such as:
-								<ul>
-									<li>Loading images</li>
-									<li>One-time setup</li>
-									<li>Variation of tiles using a switch case in myDrawTile(i,j,variation) and "animated" assets</li>
-									<li>Vertical offset of tile (i,j) using millis() to further emphasize height</li>
-									<li>Tile Variation</li>
-									<li>Setting the seed value for noise(). By default, noise() produces different results each time the program is run. Different world by entering a different key</li>
-								</ul>
-							</li>
-						</ul>
-						<span class="font">Screenshots</span>
-					</div>
-					<div class="gallery">
-						<img class="modal-image" src="static/img/7_hash_landscapes/assets/empty.png" style="width:33%; height:33%;" alt="Starter tiles">
-						<img class="modal-image" src="static/img/7_hash_landscapes/assets/myDrawTile.png" style="width:33%; height:33%;" alt="Boats">
-						<img class="modal-image" src="static/img/7_hash_landscapes/assets/gif.gif" style="width:33%; height:33%;" alt="Floating boats">					
-					</div>
-					<div style="text-align: center">
-						<span id="hashlandscapes-close-btn" class="close-btn">Close</span>
+						<span id="beanstalk-close-btn" class="close-btn">Close</span>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!--ENGINEERING END-->
 
-	    <div id="game-projects" class="anchor"></div>
+	    <div id="school-projects" class="anchor"></div>
 	    <div class="section-title">
-			<h2>Game Projects</h2>
+			<h2>SCHOOL PROJECTS</h2>
 		</div>
 		<div class="section section-grid">
 			<!-- Shroommates -->
@@ -482,6 +357,159 @@
 					</div>
 				</div>
 			</div>
+			<div id="subscriptionsplitter" class="card" onclick="openModal(this)">
+				<img class="card-image" src="static/img/4_subscription_splitter/subscription_splitter.png" alt="Subscription Splitter">
+				<div class="card-container">
+					<span class="project-title"><strong>Subscription Splitter</strong></span>
+					<p class="project-note">&mdash; MongoDB Express.js Node.js</p>
+					<p><em>"Can I join your group?"</em></p>
+				</div>
+			</div>
+			<div id="subscriptionsplitter-modal" class="modal">
+				<div class="modal-content">
+					<span id="subscriptionsplitter-close" class="close">&times;</span>
+					<div>
+						<span class="project-title"><strong>Subscription Splitter |</strong></span>
+						<span class="project-note">Used MongoDB Express.js Node.js</span>
+						<p><em>"Can I join your group?"</em></p>
+					</div>
+					<div class="modal-indent">
+						<p>
+							Subscription Splitter is a web application that aims to serve as a platform so anyone can find people to split the cost of a variety of services such as Netflix, Chegg, HBO, or Hulu. Users must create an account before they are able to make a post. The app allows users to leave comments to let people contact each other.
+							Check out the website <a class="small-link" href="https://calm-badlands-13726.herokuapp.com" target="_blank">here</a>.
+						</p>
+						<ul class="subscription-specific">
+							<li>What we accomplished:
+								<ul>
+									<li>Used MongoDB to set up models for Schemas and associated the data using either embedded or referenced methods for one to one relationship, one to many, or many to many relationships. An example would be the comment Schema which defined the model of a comment to have the author and description of the comment. Later, we had to associate comments by exporting it as a model to the group Schema and displaying it on the show route. Finally, after authentication was done, comments were then associated with users when the user signed up and then signed in to add comments</li>
+									<li>Used environment variables so that production and development databases are unique. Database served on mlab and site hosted on Heroku became the production data, while locally we had a separate MongoDB database for testing purposes on AWS Cloud9</li>
+									<li>Used RESTful Routes and mapped HTTP routes and CRUD using Express.js</li>
+									<li>Used Node.js and packages such as body-parser, connect-flash, ejs, express, method-override, mongoose, and passport</li>
+									<li>Used Bootstrap styling methods and its grid system</li>
+									<li>For our project management method, we followed the SCRUM methodology and had weekly standups and burndown charts. Familiarized ourselves with Trello and organized our Sprints there</li>
+								</ul>
+							</li>
+						</ul>
+						<span class="font">Screenshots</span>
+					</div>
+					<div class="gallery">
+						<img class="modal-image" src="static/img/4_subscription_splitter/subscription_splitter.png" alt="Subscription Splitter" style="width:33%; height:33%;">
+					</div>
+					<div style="text-align:center;">
+						<span id="subscriptionsplitter-close-btn" class="close-btn">Close</span>
+					</div>
+				</div>
+			</div>
+
+			<div id="classroom" class="card" onclick="openModal(this)">
+				<img class="card-image" src="static/img/5_c++/classroom.png" alt="Classroom">
+				<div class="card-container">
+					<span class="project-title"><strong>Classroom Manager</strong></span>
+					<p class="project-note">&mdash; C++</p>
+					<p><em>"Who overslept"</em></p>
+				</div>
+			</div>
+			<div id="classroom-modal" class="modal">
+				<div class="modal-content">
+					<span id="classroom-close" class="close">&times;</span>
+					<div>
+						<span class="project-title"><strong>Classroom Manager |</strong></span>
+						<span class="project-note">C++</span>
+						<p><em>"First program in C++"</em></p>
+					</div>
+					<div class="modal-indent">
+						<p>
+							Consider you have an embedded application to be deployed on a set of card readers for a classroom seats management and attendance system. An institute deploys this application on a set of 8 classrooms, with each classroom having 256 available seats. Seats are pre-assigned to students, where by the same seat will be occupied by the same student in all classrooms; i.e. no two students can have the same seat number ever. The seat number of the student will be hardwired on his card. Each student will stamp upon entering and upon leaving a specific class. A student cannot exist in two classes at any point in time. The whole idea is to be able to know how many students are there in any particular class, inquire about a specific student location in any class at any point of time, and to be able also to inquire on the availability of a specific student at any point in time. The maximum number of students that can go to any class is 256, and students are numbered from 0 to 255.
+							Check out the repo <a class="small-link" href="https://github.com/okamiko/okamiko.github.io/tree/master/static/img/5_c%2B%2B" target="_blank">here</a>.
+						</p>
+						<span class="font">Screenshots</span>
+					</div>
+					<div class="gallery">
+						<img class="modal-image" src="static/img/5_c++/classroom.png" alt="Classroom" style="width:33%; height:33%;">
+					</div>
+					<div style="text-align: center">
+						<span id="classroom-close-btn" class="close-btn">Close</span>
+					</div>
+				</div>
+			</div>
+
+			<div id="browsergraphics" class="card" onclick="openModal(this)">
+				<img class="card-image" src="static/img/6_browser_graphics/assets/img/aran.png" alt="Aran">
+				<div class="card-container">
+					<span class="project-title"><strong>Browser Graphics</strong></span>
+					<p class="project-note">&mdash;p5.js</p>
+					<p><em>"Maplestory!"</em></p>
+				</div>
+			</div>
+			<div id="browsergraphics-modal" class="modal">
+				<div class="modal-content">
+					<span id="browsergraphics-close" class="close">&times;</span>
+					<div>
+						<span class="project-title"><strong>Browser Graphics |</strong></span>
+						<span class="project-note">p5.js</span>
+						<p><em>"Generativity"</em></p>
+					</div>
+					<div class="modal-indent">
+						<p>
+							In this programming assignment, you’ll create a program that generativity and interactively reinterprets an image of your own selection. Practice goals: Start a local web server. Edit and debug JavaScript in the Chrome browser’s development tools. Use P5js to read from and draw on images. Start thinking about generativity. Click <a class="small-link" href="https://github.com/okamiko/okamiko.github.io/tree/master/static/img/6_browser_graphics" target="_blank">this</a> to view the repo.
+						</p>
+						<span class="font">Screenshots</span>
+					</div>
+					<div class="gallery">
+						<img class="modal-image" src="static/img/6_browser_graphics/assets/img/aran.gif" style="width:33%; height:33%;" alt="Aran gif">
+						<img class="modal-image" src="static/img/6_browser_graphics/assets/img/aran.png" style="width:33%; height:33%;" alt="Aran png">
+						<img class="modal-image" src="static/img/6_browser_graphics/assets/img/aran.jpg" style="width:33%; height:33%;" alt="Aran jpg">					
+					</div>
+					<div style="text-align: center">
+						<span id="browsergraphics-close-btn" class="close-btn">Close</span>
+					</div>
+				</div>
+			</div>
+
+			<div id="hashlandscapes" class="card" onclick="openModal(this)">
+				<img class="card-image" src="static/img/7_hash_landscapes/assets/landing.png" alt="Floating Boats">
+				<div class="card-container">
+					<span class="project-title"><strong>Hash Landscapes</strong></span>
+					<p class="project-note">&mdash;p5.js, Perlin Noise, Hash Trees</p>
+					<p><em>"Dolphins, boats, and waves!"</em></p>
+				</div>
+			</div>
+			<div id="hashlandscapes-modal" class="modal">
+				<div class="modal-content">
+					<span id="hashlandscapes-close" class="close">&times;</span>
+					<div>
+						<span class="project-title"><strong>Hash Landscapes |</strong></span>
+						<span class="project-note">p5.js, Perlin Noise, Hash Trees</span>
+						<p><em>"Pseudo-infinite, pseudo-random"</em></p>
+					</div>
+					<div class="modal-indent">
+						<p>
+							In this programming assignment, you’ll create a pseudo-infinite, pseudo-random terrain design exploiting the idea of hash trees. Every minute detail of your world should be uniquely determined by a user-provided worldgen key. Practice goals: Use noise functions to create smooth variations. Use hash trees to make repeatable random choices. Derive both continuous and discrete choices from the discrete state of the hash. Click <a class="small-link" href="https://github.com/okamiko/okamiko.github.io/tree/master/static/img/7_hash_landscapes" target="_blank">this</a> to view the repo.
+						</p>
+						<ul>
+							<li>Implemented functionalities such as:
+								<ul>
+									<li>Loading images</li>
+									<li>One-time setup</li>
+									<li>Variation of tiles using a switch case in myDrawTile(i,j,variation) and "animated" assets</li>
+									<li>Vertical offset of tile (i,j) using millis() to further emphasize height</li>
+									<li>Tile Variation</li>
+									<li>Setting the seed value for noise(). By default, noise() produces different results each time the program is run. Different world by entering a different key</li>
+								</ul>
+							</li>
+						</ul>
+						<span class="font">Screenshots</span>
+					</div>
+					<div class="gallery">
+						<img class="modal-image" src="static/img/7_hash_landscapes/assets/empty.png" style="width:33%; height:33%;" alt="Starter tiles">
+						<img class="modal-image" src="static/img/7_hash_landscapes/assets/myDrawTile.png" style="width:33%; height:33%;" alt="Boats">
+						<img class="modal-image" src="static/img/7_hash_landscapes/assets/gif.gif" style="width:33%; height:33%;" alt="Floating boats">					
+					</div>
+					<div style="text-align: center">
+						<span id="hashlandscapes-close-btn" class="close-btn">Close</span>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<div id="resume" class="anchor"></div>
@@ -493,9 +521,9 @@
 				<div class="card">
 					<img class="card-image" src="static/img/maple_2.png" alt="Maplestory">
 					<div class="card-container">
-						<span class="project-title"><strong>Engineering</strong></span>
-						<p class="project-note">&mdash; For engineering recruiters</p>
-						<p><em>":)"</em></p>
+						<span class="project-title"><strong>Resume</strong></span>
+						<p class="project-note">&mdash; Click Me </p>
+						<p><em>"~"</em></p>
 					</div>
 				</div>
 			</a>
@@ -513,11 +541,10 @@
 				Hello!
 			</p>
 			<p>
-				I am currently a Cloud System Administrator at Stanford University IT.
+				I am currently a Cloud Operations Analyst at Stanford University IT.
 			</p>
 			<p>
-				I strongly believe that friends shouldn't let friends manage servers and that servers should be treated like cattle and not like pets. Cloud, virtualization, and containers. These are what powers internet-scale applications. Let's connect and let's get building.
-			</p>
+				I strongly believe that friends shouldn't let friends manage servers and that servers should be treated like cattle and not like pets. Cloud, virtualization, and containers. These are what powers internet-scale applications. 
 			<p> 
 				Other than cloud related work, some competitive and laid back multiplayer games that I'm hooked on are 
 				<a class="small-link" href="http://maplestory.nexon.net" target="_blank">MapleStory</a>,
